@@ -1,0 +1,842 @@
+﻿Log file open, 06/17/16 00:44:13
+LogInit:Display: Running engine for game: SurvivalGame
+LogInit: Version: 4.7.6-2513093+++depot+UE4-Releases+4.7
+LogInit: API Version: 2455222
+LogInit: Compiled (64-bit): Apr 15 2015 12:09:54
+LogInit: Compiled with Visual C++: 18.00.21005.01
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++depot+UE4-Releases+4.7
+LogInit: Command line:  
+LogInit: Base directory: E:/Programs/Epic Games/4.7/Engine/Binaries/Win64/
+LogInit: Rocket: 1
+[2016.06.16-23.44.13:583][  0]LogTaskGraph: Started task graph with 3 named threads and 6 total threads.
+[2016.06.16-23.44.13:641][  0]LogOnline:Warning: No default platform service specified for OnlineSubsystem
+[2016.06.16-23.44.13:655][  0]LogInit: Presizing for 0 objects not considered by GC, pre-allocating 0 bytes.
+[2016.06.16-23.44.13:665][  0]LogInit: Object subsystem initialized
+[2016.06.16-23.44.13:666][  0]LogConsoleResponse:Warning: Skipping Unknown console variable: 'TranslucentSortAxis = (X=0.000000,Y=-1.000000,Z=0.000000)'
+[2016.06.16-23.44.13:666][  0]LogConsoleResponse:Warning:   Found in ini file 'E:/Unreal Engine Projects/UE4-Survival-Game/Saved/Config/Windows/Engine.ini', in section '[/Script/Engine.RendererSettings]'
+[2016.06.16-23.44.13:666][  0]LogConsoleResponse:Warning: Skipping Unknown console variable: 'UIScaleRule = ShortestSide'
+[2016.06.16-23.44.13:666][  0]LogConsoleResponse:Warning:   Found in ini file 'E:/Unreal Engine Projects/UE4-Survival-Game/Saved/Config/Windows/Engine.ini', in section '[/Script/Engine.RendererSettings]'
+[2016.06.16-23.44.13:666][  0]LogConsoleResponse:Warning: Skipping Unknown console variable: 'UIScaleCurve = (EditorCurveData=(Keys=),ExternalCurve=None)'
+[2016.06.16-23.44.13:666][  0]LogConsoleResponse:Warning:   Found in ini file 'E:/Unreal Engine Projects/UE4-Survival-Game/Saved/Config/Windows/Engine.ini', in section '[/Script/Engine.RendererSettings]'
+[2016.06.16-23.44.13:669][  0]LogInit: Selected Device Profile: [Windows]
+[2016.06.16-23.44.13:669][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2016.06.16-23.44.13:872][  0]LogInit: Computer: DESKTOP-7SFO1BP
+[2016.06.16-23.44.13:872][  0]LogInit: User: alex
+[2016.06.16-23.44.13:872][  0]LogInit: CPU Page size=4096, Cores=4
+[2016.06.16-23.44.13:872][  0]LogInit: High frequency timer resolution =3.417964 MHz
+[2016.06.16-23.44.13:872][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx) Virtual=131072.0GB
+[2016.06.16-23.44.13:872][  0]LogMemory: Platform Memory Stats for Windows
+[2016.06.16-23.44.13:872][  0]LogMemory: Process Physical Memory: 47.11 MB used, 47.11 MB peak
+[2016.06.16-23.44.13:872][  0]LogMemory: Process Virtual Memory: 24.65 MB used, 24.66 MB peak
+[2016.06.16-23.44.13:872][  0]LogMemory: Physical Memory: 3991.13 MB used, 16241.91 MB total
+[2016.06.16-23.44.13:872][  0]LogMemory: Virtual Memory: 311.89 MB used, 134217728.00 MB total
+[2016.06.16-23.44.13:902][  0]LogD3D11RHI: Found D3D11 adapter 0: NVIDIA GeForce GTX 970 (Feature Level 11_0)
+[2016.06.16-23.44.13:902][  0]LogD3D11RHI: Adapter has 4007MB of dedicated video memory, 0MB of dedicated system memory, and 8120MB of shared system memory, 1 output[s]
+[2016.06.16-23.44.13:907][  0]LogD3D11RHI: Found D3D11 adapter 1: Intel(R) HD Graphics 4600 (Feature Level 11_0)
+[2016.06.16-23.44.13:907][  0]LogD3D11RHI: Adapter has 112MB of dedicated video memory, 0MB of dedicated system memory, and 8120MB of shared system memory, 0 output[s]
+[2016.06.16-23.44.13:908][  0]LogD3D11RHI: Found D3D11 adapter 2: Microsoft Basic Render Driver (Feature Level 11_0)
+[2016.06.16-23.44.13:908][  0]LogD3D11RHI: Adapter has 0MB of dedicated video memory, 0MB of dedicated system memory, and 8120MB of shared system memory, 0 output[s]
+[2016.06.16-23.44.13:908][  0]LogD3D11RHI: Chosen D3D11 Adapter Id = 0
+[2016.06.16-23.44.13:911][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2016.06.16-23.44.13:924][  0]LogD3D11RHI: Async texture creation enabled
+[2016.06.16-23.44.13:972][  0]LogTextLocalizationManager: The requested culture ('en_GB') has no localization data; parent culture's ('en') localization data will be used.
+[2016.06.16-23.44.14:023][  0]LogTextLocalizationManager:Warning: Loading localization resources contain conflicting entries for (Namespace:UICommands, Key:Save_ToolTip):
+Resource: (E:/Programs/Epic Games/4.7/Engine/Content/Localization/Editor/en/Editor.locres) Hash: (-29098895) String: (Saves the current level to disk)
+Resource: (E:/Programs/Epic Games/4.7/Engine/Content/Localization/Engine/en/Engine.locres) Hash: (-1280300587) String: (Save selected data to vlog file)
+[2016.06.16-23.44.14:023][  0]LogTextLocalizationManager:Warning: Loading localization resources contain conflicting entries for (Namespace:ContentBrowser, Key:ImportAssetToolTip):
+Resource: (E:/Programs/Epic Games/4.7/Engine/Content/Localization/Editor/en/Editor.locres) Hash: (-630476809) String: (Import to {0}...)
+Resource: (E:/Programs/Epic Games/4.7/Engine/Content/Localization/Editor/en/Editor.locres) Hash: (1271782899) String: (Imports an asset from file to this folder.)
+[2016.06.16-23.44.14:091][  0]LogContentStreaming: Texture pool size is 0.000000MB
+[2016.06.16-23.44.15:798][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2016.06.16-23.44.16:124][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2016.06.16-23.44.16:169][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2016.06.16-23.44.16:217][  0]LogDerivedDataCache: Loaded boot cache 0.05s 39MB C:/Users/alexo/AppData/Local/UnrealEngine/4.7/DerivedDataCache/Boot.ddc.
+[2016.06.16-23.44.16:217][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/alexo/AppData/Local/UnrealEngine/4.7/DerivedDataCache/Boot.ddc
+[2016.06.16-23.44.16:217][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Unreal Engine Projects/UE4-Survival-Game/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2016.06.16-23.44.16:217][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2016.06.16-23.44.16:316][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2016.06.16-23.44.16:327][  0]LogDerivedDataCache: Using Local data cache path C:/Users/alexo/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2016.06.16-23.44.16:547][  0]LogMeshUtilities: No automatic mesh reduction module available
+[2016.06.16-23.44.16:547][  0]LogMeshUtilities: No automatic mesh merging module available
+[2016.06.16-23.44.16:826][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2016.06.16-23.44.16:876][  0]LogSlate:Warning: Failed to load font data from '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf'
+[2016.06.16-23.44.17:600][  0]UdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2016.06.16-23.44.17:673][  0]LogSkinnedMeshComp:Warning: GetSocketByName(): No SkeletalMesh for WeaponMesh3P
+[2016.06.16-23.44.17:673][  0]LogSkinnedMeshComp:Warning: GetSocketByName(): No SkeletalMesh for WeaponMesh3P
+[2016.06.16-23.44.17:673][  0]LogSkinnedMeshComp:Warning: GetSocketByName(): No SkeletalMesh for WeaponMesh3P
+[2016.06.16-23.44.17:673][  0]LogSkinnedMeshComp:Warning: GetSocketByName(): No SkeletalMesh for WeaponMesh3P
+[2016.06.16-23.44.17:673][  0]LogSkinnedMeshComp:Warning: GetSocketByName(): No SkeletalMesh for WeaponMesh3P
+[2016.06.16-23.44.17:673][  0]LogSkinnedMeshComp:Warning: GetSocketByName(): No SkeletalMesh for WeaponMesh3P
+[2016.06.16-23.44.17:673][  0]LogSkinnedMeshComp:Warning: GetSocketByName(): No SkeletalMesh for WeaponMesh3P
+[2016.06.16-23.44.17:863][  0]SourceControl: Info Source control is disabled
+[2016.06.16-23.44.17:864][  0]SourceControl: Info Source control is disabled
+[2016.06.16-23.44.17:864][  0]SourceControl: Info Source control is disabled
+[2016.06.16-23.44.17:864][  0]LogSourceControl: RunCommandInternalRaw: 'git version'
+[2016.06.16-23.44.17:864][  0]LogSourceControl: RunCommandInternalRaw: ExecProcess ReturnCode=2 OutResults=''
+[2016.06.16-23.44.17:870][  0]SourceControl: Info Source control is disabled
+[2016.06.16-23.44.18:004][  0]LogObj: 24434 objects as part of root set at end of initial load.
+[2016.06.16-23.44.18:004][  0]LogUObjectAllocator: 5218688 out of 0 bytes used by permanent object pool.
+[2016.06.16-23.44.18:073][  0]LogEngine: Initializing Engine...
+[2016.06.16-23.44.20:257][  0]LogInit: XAudio2 using 'Speakers (USB Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.06.16-23.44.20:265][  0]LogInit: FAudioDevice initialized.
+[2016.06.16-23.44.20:293][  0]LogAIModule: Creating AISystem for world NewWorld
+[2016.06.16-23.44.20:319][  0]LogDerivedDataCache: Saved boot cache 0.03s 39MB C:/Users/alexo/AppData/Local/UnrealEngine/4.7/DerivedDataCache/Boot.ddc.
+[2016.06.16-23.44.20:327][  0]LogInit: Texture streaming: Enabled
+[2016.06.16-23.44.20:399][  0]LogAnalytics: Creating configured Analytics provider AnalyticsET
+[2016.06.16-23.44.20:399][  0]LogAnalytics: ET APIKey = Rocket.Release. APIServer = http://et2.epicgames.com/ET2/. AppVersion = 4.7.6-2513093+++depot+UE4-Releases+4.7
+[2016.06.16-23.44.20:399][  0]LogAnalytics: ET APIKey = Rocket.Release. DataRouterUploadURL = https://datarouter-public-service-gamedev.ol.epicgames.net/datarouter/api/v1/public/data. AppVersion = 4.7.6-2513093+++depot+UE4-Releases+4.7
+[2016.06.16-23.44.20:399][  0]LogAnalytics: SetUserId b4ed25b047eb6d3b33a1f8b1266eaade|7cf47ce14d724922820f88c7701a22ad|a234f86e-7881-4bfd-93c4-9febe731eb4f
+[2016.06.16-23.44.20:399][  0]LogAnalytics: AnalyticsET::StartSession [Rocket.Release]
+[2016.06.16-23.44.20:417][  0]LogInit: Transaction tracking system initialized
+[2016.06.16-23.44.20:536][  0]BlueprintLog: New page: Editor Load
+[2016.06.16-23.44.20:570][  0]LogAssetRegistry: FAssetRegistry took 0.0114 seconds to start up
+[2016.06.16-23.44.20:570][  0]LogDirectoryWatcher:Warning: Failed to begin reading directory changes for ../../../Engine/Plugins/Experimental/CharacterAI/Content/. Error: 0
+[2016.06.16-23.44.20:910][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2016.06.16-23.44.21:180][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2016.06.16-23.44.21:471][  0]LogSlate:Warning: Failed to load font data from '../../../Engine/Content/Editor/Slate/Fonts/Roboto-Regular.ttf'
+[2016.06.16-23.44.21:472][  0]LogSlate:Warning: Failed to load font data from '../../../Engine/Content/Editor/Slate/Fonts/Roboto-Bold.ttf'
+[2016.06.16-23.44.21:600][  0]LogConsoleResponse:Display: 
+[2016.06.16-23.44.21:738][  0]LogCook:Display: Done creating registry. It took  0.00s.
+[2016.06.16-23.44.21:870][  0]SourceControl: Info Source control is disabled
+[2016.06.16-23.44.21:871][  0]LogPackageName:Error: DoesPackageExist: DoesPackageExist FAILED: 'StarterContent/StarterContent' is not a standard unreal filename or a long path name. Reason: Path should start with a '/'
+[2016.06.16-23.44.21:871][  0]LogPackageName:Error: DoesPackageExist: DoesPackageExist FAILED: 'StarterContent/StarterContent' is not a standard unreal filename or a long path name. Reason: Path should start with a '/'
+[2016.06.16-23.44.21:871][  0]LogFactory: FactoryCreateBinary: PackFactory with PackFactory (0 0 E:/Programs/Epic Games/4.7/FeaturePacks/StarterContent.upack)
+[2016.06.16-23.44.22:438][  0]LogPackFactory: Content/StarterContent/Architecture/Floor_400x400.uasset (48141) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Architecture/Floor_400x400.uasset
+[2016.06.16-23.44.22:451][  0]LogPackFactory: Content/StarterContent/Architecture/Pillar_50x500.uasset (65452) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Architecture/Pillar_50x500.uasset
+[2016.06.16-23.44.22:455][  0]LogPackFactory: Content/StarterContent/Architecture/SM_AssetPlatform.uasset (452977) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Architecture/SM_AssetPlatform.uasset
+[2016.06.16-23.44.22:460][  0]LogPackFactory: Content/StarterContent/Architecture/SM_CeilingPiece500x500.uasset (441) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Architecture/SM_CeilingPiece500x500.uasset
+[2016.06.16-23.44.22:645][  0]LogPackFactory: Content/StarterContent/Architecture/SM_FloorPiece500x500.uasset (439) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Architecture/SM_FloorPiece500x500.uasset
+[2016.06.16-23.44.22:710][  0]LogPackFactory: Content/StarterContent/Architecture/Wall_400x200.uasset (42169) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Architecture/Wall_400x200.uasset
+[2016.06.16-23.44.22:714][  0]LogPackFactory: Content/StarterContent/Architecture/Wall_400x300.uasset (41804) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Architecture/Wall_400x300.uasset
+[2016.06.16-23.44.22:718][  0]LogPackFactory: Content/StarterContent/Architecture/Wall_400x400.uasset (43426) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Architecture/Wall_400x400.uasset
+[2016.06.16-23.44.22:722][  0]LogPackFactory: Content/StarterContent/Architecture/Wall_500x500.uasset (57909) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Architecture/Wall_500x500.uasset
+[2016.06.16-23.44.22:725][  0]LogPackFactory: Content/StarterContent/Architecture/Wall_Door_400x300.uasset (52430) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Architecture/Wall_Door_400x300.uasset
+[2016.06.16-23.44.22:728][  0]LogPackFactory: Content/StarterContent/Architecture/Wall_Door_400x400.uasset (53246) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Architecture/Wall_Door_400x400.uasset
+[2016.06.16-23.44.22:731][  0]LogPackFactory: Content/StarterContent/Architecture/Wall_Window_400x300.uasset (53709) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Architecture/Wall_Window_400x300.uasset
+[2016.06.16-23.44.22:734][  0]LogPackFactory: Content/StarterContent/Architecture/Wall_Window_400x400.uasset (54778) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Architecture/Wall_Window_400x400.uasset
+[2016.06.16-23.44.22:738][  0]LogPackFactory: Content/StarterContent/Audio/Collapse01.uasset (348532) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Audio/Collapse01.uasset
+[2016.06.16-23.44.22:743][  0]LogPackFactory: Content/StarterContent/Audio/Collapse02.uasset (346701) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Audio/Collapse02.uasset
+[2016.06.16-23.44.22:749][  0]LogPackFactory: Content/StarterContent/Audio/Collapse_Cue.uasset (6113) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Audio/Collapse_Cue.uasset
+[2016.06.16-23.44.22:751][  0]LogPackFactory: Content/StarterContent/Audio/Explosion01.uasset (282440) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Audio/Explosion01.uasset
+[2016.06.16-23.44.22:756][  0]LogPackFactory: Content/StarterContent/Audio/Explosion02.uasset (289195) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Audio/Explosion02.uasset
+[2016.06.16-23.44.22:760][  0]LogPackFactory: Content/StarterContent/Audio/Explosion_Cue.uasset (7657) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Audio/Explosion_Cue.uasset
+[2016.06.16-23.44.22:762][  0]LogPackFactory: Content/StarterContent/Audio/Fire01.uasset (549696) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Audio/Fire01.uasset
+[2016.06.16-23.44.22:767][  0]LogPackFactory: Content/StarterContent/Audio/Fire01_Cue.uasset (3894) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Audio/Fire01_Cue.uasset
+[2016.06.16-23.44.22:770][  0]LogPackFactory: Content/StarterContent/Audio/Fire_Sparks01.uasset (796274) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Audio/Fire_Sparks01.uasset
+[2016.06.16-23.44.22:777][  0]LogPackFactory: Content/StarterContent/Audio/Fire_Sparks01_Cue.uasset (3908) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Audio/Fire_Sparks01_Cue.uasset
+[2016.06.16-23.44.22:778][  0]LogPackFactory: Content/StarterContent/Audio/Light01.uasset (364532) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Audio/Light01.uasset
+[2016.06.16-23.44.22:784][  0]LogPackFactory: Content/StarterContent/Audio/Light01_Cue.uasset (3852) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Audio/Light01_Cue.uasset
+[2016.06.16-23.44.22:787][  0]LogPackFactory: Content/StarterContent/Audio/Light02.uasset (308156) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Audio/Light02.uasset
+[2016.06.16-23.44.22:794][  0]LogPackFactory: Content/StarterContent/Audio/Light02_Cue.uasset (3852) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Audio/Light02_Cue.uasset
+[2016.06.16-23.44.22:797][  0]LogPackFactory: Content/StarterContent/Audio/Smoke01.uasset (476002) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Audio/Smoke01.uasset
+[2016.06.16-23.44.22:803][  0]LogPackFactory: Content/StarterContent/Audio/Smoke01_Cue.uasset (3872) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Audio/Smoke01_Cue.uasset
+[2016.06.16-23.44.22:806][  0]LogPackFactory: Content/StarterContent/Audio/Starter_Background_Cue.uasset (9874) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Audio/Starter_Background_Cue.uasset
+[2016.06.16-23.44.22:809][  0]LogPackFactory: Content/StarterContent/Audio/Starter_Birds01.uasset (2689459) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Audio/Starter_Birds01.uasset
+[2016.06.16-23.44.22:825][  0]LogPackFactory: Content/StarterContent/Audio/Starter_Music01.uasset (8445372) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Audio/Starter_Music01.uasset
+[2016.06.16-23.44.23:058][  0]LogPackFactory: Content/StarterContent/Audio/Starter_Music_Cue.uasset (3390) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Audio/Starter_Music_Cue.uasset
+[2016.06.16-23.44.23:061][  0]LogPackFactory: Content/StarterContent/Audio/Starter_Wind05.uasset (2312702) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Audio/Starter_Wind05.uasset
+[2016.06.16-23.44.23:095][  0]LogPackFactory: Content/StarterContent/Audio/Starter_Wind06.uasset (2195539) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Audio/Starter_Wind06.uasset
+[2016.06.16-23.44.23:124][  0]LogPackFactory: Content/StarterContent/Audio/Steam01.uasset (819028) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Audio/Steam01.uasset
+[2016.06.16-23.44.23:136][  0]LogPackFactory: Content/StarterContent/Audio/Steam01_Cue.uasset (3900) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Audio/Steam01_Cue.uasset
+[2016.06.16-23.44.23:137][  0]LogPackFactory: Content/StarterContent/Blueprints/Assets/FogBrightnessLUT.uasset (1011) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Blueprints/Assets/FogBrightnessLUT.uasset
+[2016.06.16-23.44.23:140][  0]LogPackFactory: Content/StarterContent/Blueprints/Assets/M_LightStage_Arrows.uasset (44857) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Blueprints/Assets/M_LightStage_Arrows.uasset
+[2016.06.16-23.44.23:143][  0]LogPackFactory: Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_Black.uasset (67062) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_Black.uasset
+[2016.06.16-23.44.23:147][  0]LogPackFactory: Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_HDRI.uasset (100458) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_HDRI.uasset
+[2016.06.16-23.44.23:151][  0]LogPackFactory: Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_Master.uasset (75669) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_Master.uasset
+[2016.06.16-23.44.23:154][  0]LogPackFactory: Content/StarterContent/Blueprints/Assets/Skybox.uasset (644855) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Blueprints/Assets/Skybox.uasset
+[2016.06.16-23.44.23:160][  0]LogPackFactory: Content/StarterContent/Blueprints/Assets/SM_Arrows.uasset (520136) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Blueprints/Assets/SM_Arrows.uasset
+[2016.06.16-23.44.23:165][  0]LogPackFactory: Content/StarterContent/Blueprints/Assets/SunlightColorLUT.uasset (1506) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Blueprints/Assets/SunlightColorLUT.uasset
+[2016.06.16-23.44.23:167][  0]LogPackFactory: Content/StarterContent/Blueprints/Blueprint_CeilingLight.uasset (66613) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Blueprints/Blueprint_CeilingLight.uasset
+[2016.06.16-23.44.23:171][  0]LogPackFactory: Content/StarterContent/Blueprints/Blueprint_Effect_Explosion.uasset (8324) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Blueprints/Blueprint_Effect_Explosion.uasset
+[2016.06.16-23.44.23:173][  0]LogPackFactory: Content/StarterContent/Blueprints/Blueprint_Effect_Fire.uasset (8332) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Blueprints/Blueprint_Effect_Fire.uasset
+[2016.06.16-23.44.23:176][  0]LogPackFactory: Content/StarterContent/Blueprints/Blueprint_Effect_Smoke.uasset (8346) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Blueprints/Blueprint_Effect_Smoke.uasset
+[2016.06.16-23.44.23:180][  0]LogPackFactory: Content/StarterContent/Blueprints/Blueprint_Effect_Sparks.uasset (8365) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Blueprints/Blueprint_Effect_Sparks.uasset
+[2016.06.16-23.44.23:183][  0]LogPackFactory: Content/StarterContent/Blueprints/Blueprint_Effect_Steam.uasset (8354) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Blueprints/Blueprint_Effect_Steam.uasset
+[2016.06.16-23.44.23:187][  0]LogPackFactory: Content/StarterContent/Blueprints/Blueprint_WallSconce.uasset (52866) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Blueprints/Blueprint_WallSconce.uasset
+[2016.06.16-23.44.23:190][  0]LogPackFactory: Content/StarterContent/Blueprints/BP_LightStudio.uasset (337416) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Blueprints/BP_LightStudio.uasset
+[2016.06.16-23.44.23:195][  0]LogPackFactory: Content/StarterContent/HDRI/HDRI_Epic_Courtyard_Daylight.uasset (72364642) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/HDRI/HDRI_Epic_Courtyard_Daylight.uasset
+[2016.06.16-23.44.24:385][  0]LogPackFactory: Content/StarterContent/Maps/Advanced_Lighting.umap (223408) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Maps/Advanced_Lighting.umap
+[2016.06.16-23.44.24:390][  0]LogPackFactory: Content/StarterContent/Maps/Minimal_Default.umap (2154106) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Maps/Minimal_Default.umap
+[2016.06.16-23.44.24:412][  0]LogPackFactory: Content/StarterContent/Maps/StarterMap.umap (16371806) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Maps/StarterMap.umap
+[2016.06.16-23.44.24:623][  0]LogPackFactory: Content/StarterContent/Materials/M_AssetPlatform.uasset (68672) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Materials/M_AssetPlatform.uasset
+[2016.06.16-23.44.24:627][  0]LogPackFactory: Content/StarterContent/Materials/M_Basic_Floor.uasset (65286) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Materials/M_Basic_Floor.uasset
+[2016.06.16-23.44.24:632][  0]LogPackFactory: Content/StarterContent/Materials/M_Basic_Wall.uasset (55455) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Materials/M_Basic_Wall.uasset
+[2016.06.16-23.44.24:635][  0]LogPackFactory: Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset (100568) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset
+[2016.06.16-23.44.24:640][  0]LogPackFactory: Content/StarterContent/Materials/M_Brick_Clay_New.uasset (130734) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Materials/M_Brick_Clay_New.uasset
+[2016.06.16-23.44.24:643][  0]LogPackFactory: Content/StarterContent/Materials/M_Brick_Clay_Old.uasset (123390) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Materials/M_Brick_Clay_Old.uasset
+[2016.06.16-23.44.24:648][  0]LogPackFactory: Content/StarterContent/Materials/M_Brick_Cut_Stone.uasset (122803) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Materials/M_Brick_Cut_Stone.uasset
+[2016.06.16-23.44.24:652][  0]LogPackFactory: Content/StarterContent/Materials/M_Brick_Hewn_Stone.uasset (90915) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Materials/M_Brick_Hewn_Stone.uasset
+[2016.06.16-23.44.24:656][  0]LogPackFactory: Content/StarterContent/Materials/M_Ceramic_Tile_Checker.uasset (91562) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Materials/M_Ceramic_Tile_Checker.uasset
+[2016.06.16-23.44.24:660][  0]LogPackFactory: Content/StarterContent/Materials/M_CobbleStone_Pebble.uasset (122364) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Materials/M_CobbleStone_Pebble.uasset
+[2016.06.16-23.44.24:664][  0]LogPackFactory: Content/StarterContent/Materials/M_CobbleStone_Rough.uasset (199387) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Materials/M_CobbleStone_Rough.uasset
+[2016.06.16-23.44.24:667][  0]LogPackFactory: Content/StarterContent/Materials/M_CobbleStone_Smooth.uasset (206806) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Materials/M_CobbleStone_Smooth.uasset
+[2016.06.16-23.44.24:672][  0]LogPackFactory: Content/StarterContent/Materials/M_ColorGrid_LowSpec.uasset (85099) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Materials/M_ColorGrid_LowSpec.uasset
+[2016.06.16-23.44.24:675][  0]LogPackFactory: Content/StarterContent/Materials/M_Concrete_Grime.uasset (91620) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Materials/M_Concrete_Grime.uasset
+[2016.06.16-23.44.24:679][  0]LogPackFactory: Content/StarterContent/Materials/M_Concrete_Panels.uasset (102285) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Materials/M_Concrete_Panels.uasset
+[2016.06.16-23.44.24:683][  0]LogPackFactory: Content/StarterContent/Materials/M_Concrete_Poured.uasset (104859) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Materials/M_Concrete_Poured.uasset
+[2016.06.16-23.44.24:687][  0]LogPackFactory: Content/StarterContent/Materials/M_Concrete_Tiles.uasset (105831) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Materials/M_Concrete_Tiles.uasset
+[2016.06.16-23.44.24:690][  0]LogPackFactory: Content/StarterContent/Materials/M_Glass.uasset (48151) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Materials/M_Glass.uasset
+[2016.06.16-23.44.24:693][  0]LogPackFactory: Content/StarterContent/Materials/M_Ground_Grass.uasset (95378) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Materials/M_Ground_Grass.uasset
+[2016.06.16-23.44.24:697][  0]LogPackFactory: Content/StarterContent/Materials/M_Ground_Gravel.uasset (120447) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Materials/M_Ground_Gravel.uasset
+[2016.06.16-23.44.24:700][  0]LogPackFactory: Content/StarterContent/Materials/M_Ground_Moss.uasset (128000) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Materials/M_Ground_Moss.uasset
+[2016.06.16-23.44.24:703][  0]LogPackFactory: Content/StarterContent/Materials/M_Metal_Brushed_Nickel.uasset (79826) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Materials/M_Metal_Brushed_Nickel.uasset
+[2016.06.16-23.44.24:707][  0]LogPackFactory: Content/StarterContent/Materials/M_Metal_Burnished_Steel.uasset (97779) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Materials/M_Metal_Burnished_Steel.uasset
+[2016.06.16-23.44.24:711][  0]LogPackFactory: Content/StarterContent/Materials/M_Metal_Chrome.uasset (79618) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Materials/M_Metal_Chrome.uasset
+[2016.06.16-23.44.24:714][  0]LogPackFactory: Content/StarterContent/Materials/M_Metal_Copper.uasset (94475) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Materials/M_Metal_Copper.uasset
+[2016.06.16-23.44.24:718][  0]LogPackFactory: Content/StarterContent/Materials/M_Metal_Gold.uasset (96084) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Materials/M_Metal_Gold.uasset
+[2016.06.16-23.44.24:721][  0]LogPackFactory: Content/StarterContent/Materials/M_Metal_Rust.uasset (109365) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Materials/M_Metal_Rust.uasset
+[2016.06.16-23.44.24:725][  0]LogPackFactory: Content/StarterContent/Materials/M_Metal_Steel.uasset (96230) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Materials/M_Metal_Steel.uasset
+[2016.06.16-23.44.24:728][  0]LogPackFactory: Content/StarterContent/Materials/M_Rock_Basalt.uasset (121462) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Materials/M_Rock_Basalt.uasset
+[2016.06.16-23.44.24:731][  0]LogPackFactory: Content/StarterContent/Materials/M_Rock_Marble_Polished.uasset (98409) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Materials/M_Rock_Marble_Polished.uasset
+[2016.06.16-23.44.24:735][  0]LogPackFactory: Content/StarterContent/Materials/M_Rock_Sandstone.uasset (113552) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Materials/M_Rock_Sandstone.uasset
+[2016.06.16-23.44.24:739][  0]LogPackFactory: Content/StarterContent/Materials/M_Rock_Slate.uasset (110874) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Materials/M_Rock_Slate.uasset
+[2016.06.16-23.44.24:743][  0]LogPackFactory: Content/StarterContent/Materials/M_Tech_Checker_Dot.uasset (98373) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Materials/M_Tech_Checker_Dot.uasset
+[2016.06.16-23.44.24:746][  0]LogPackFactory: Content/StarterContent/Materials/M_Tech_Hex_Tile.uasset (140303) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Materials/M_Tech_Hex_Tile.uasset
+[2016.06.16-23.44.24:750][  0]LogPackFactory: Content/StarterContent/Materials/M_Tech_Hex_Tile_Pulse.uasset (115223) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Materials/M_Tech_Hex_Tile_Pulse.uasset
+[2016.06.16-23.44.24:753][  0]LogPackFactory: Content/StarterContent/Materials/M_Tech_Panel.uasset (98003) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Materials/M_Tech_Panel.uasset
+[2016.06.16-23.44.24:757][  0]LogPackFactory: Content/StarterContent/Materials/M_Water_Lake.uasset (96267) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Materials/M_Water_Lake.uasset
+[2016.06.16-23.44.24:762][  0]LogPackFactory: Content/StarterContent/Materials/M_Water_Ocean.uasset (100717) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Materials/M_Water_Ocean.uasset
+[2016.06.16-23.44.24:765][  0]LogPackFactory: Content/StarterContent/Materials/M_Wood_Floor_Walnut_Polished.uasset (82816) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Materials/M_Wood_Floor_Walnut_Polished.uasset
+[2016.06.16-23.44.24:769][  0]LogPackFactory: Content/StarterContent/Materials/M_Wood_Floor_Walnut_Worn.uasset (100628) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Materials/M_Wood_Floor_Walnut_Worn.uasset
+[2016.06.16-23.44.24:772][  0]LogPackFactory: Content/StarterContent/Materials/M_Wood_Oak.uasset (107121) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Materials/M_Wood_Oak.uasset
+[2016.06.16-23.44.24:775][  0]LogPackFactory: Content/StarterContent/Materials/M_Wood_Pine.uasset (97740) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Materials/M_Wood_Pine.uasset
+[2016.06.16-23.44.24:781][  0]LogPackFactory: Content/StarterContent/Materials/M_Wood_Walnut.uasset (93022) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Materials/M_Wood_Walnut.uasset
+[2016.06.16-23.44.24:784][  0]LogPackFactory: Content/StarterContent/Particles/Materials/M_Burst.uasset (43524) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Particles/Materials/M_Burst.uasset
+[2016.06.16-23.44.24:789][  0]LogPackFactory: Content/StarterContent/Particles/Materials/M_Dust_Particle.uasset (40952) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Particles/Materials/M_Dust_Particle.uasset
+[2016.06.16-23.44.24:796][  0]LogPackFactory: Content/StarterContent/Particles/Materials/M_explosion_subUV.uasset (62151) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Particles/Materials/M_explosion_subUV.uasset
+[2016.06.16-23.44.24:800][  0]LogPackFactory: Content/StarterContent/Particles/Materials/M_Fire_SubUV.uasset (62224) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Particles/Materials/M_Fire_SubUV.uasset
+[2016.06.16-23.44.24:803][  0]LogPackFactory: Content/StarterContent/Particles/Materials/m_flare_01.uasset (48172) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Particles/Materials/m_flare_01.uasset
+[2016.06.16-23.44.24:806][  0]LogPackFactory: Content/StarterContent/Particles/Materials/M_Heat_Distortion.uasset (38287) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Particles/Materials/M_Heat_Distortion.uasset
+[2016.06.16-23.44.24:810][  0]LogPackFactory: Content/StarterContent/Particles/Materials/M_Radial_Gradient.uasset (41181) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Particles/Materials/M_Radial_Gradient.uasset
+[2016.06.16-23.44.24:814][  0]LogPackFactory: Content/StarterContent/Particles/Materials/M_radial_ramp.uasset (41193) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Particles/Materials/M_radial_ramp.uasset
+[2016.06.16-23.44.24:817][  0]LogPackFactory: Content/StarterContent/Particles/Materials/M_smoke_subUV.uasset (76603) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Particles/Materials/M_smoke_subUV.uasset
+[2016.06.16-23.44.24:823][  0]LogPackFactory: Content/StarterContent/Particles/Materials/M_Spark.uasset (43678) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Particles/Materials/M_Spark.uasset
+[2016.06.16-23.44.24:827][  0]LogPackFactory: Content/StarterContent/Particles/P_Ambient_Dust.uasset (43456) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Particles/P_Ambient_Dust.uasset
+[2016.06.16-23.44.24:830][  0]LogPackFactory: Content/StarterContent/Particles/P_Explosion.uasset (280221) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Particles/P_Explosion.uasset
+[2016.06.16-23.44.24:834][  0]LogPackFactory: Content/StarterContent/Particles/P_Fire.uasset (259431) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Particles/P_Fire.uasset
+[2016.06.16-23.44.24:839][  0]LogPackFactory: Content/StarterContent/Particles/P_Smoke.uasset (65670) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Particles/P_Smoke.uasset
+[2016.06.16-23.44.24:843][  0]LogPackFactory: Content/StarterContent/Particles/P_Sparks.uasset (171805) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Particles/P_Sparks.uasset
+[2016.06.16-23.44.24:847][  0]LogPackFactory: Content/StarterContent/Particles/P_Steam_Lit.uasset (117332) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Particles/P_Steam_Lit.uasset
+[2016.06.16-23.44.24:850][  0]LogPackFactory: Content/StarterContent/Props/Materials/M_Bush.uasset (99988) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Props/Materials/M_Bush.uasset
+[2016.06.16-23.44.24:854][  0]LogPackFactory: Content/StarterContent/Props/Materials/M_Chair.uasset (90187) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Props/Materials/M_Chair.uasset
+[2016.06.16-23.44.24:859][  0]LogPackFactory: Content/StarterContent/Props/Materials/M_Door.uasset (87249) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Props/Materials/M_Door.uasset
+[2016.06.16-23.44.24:862][  0]LogPackFactory: Content/StarterContent/Props/Materials/M_Frame.uasset (78682) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Props/Materials/M_Frame.uasset
+[2016.06.16-23.44.24:865][  0]LogPackFactory: Content/StarterContent/Props/Materials/M_Lamp.uasset (90486) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Props/Materials/M_Lamp.uasset
+[2016.06.16-23.44.24:868][  0]LogPackFactory: Content/StarterContent/Props/Materials/M_MaterialSphere.uasset (66766) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Props/Materials/M_MaterialSphere.uasset
+[2016.06.16-23.44.24:872][  0]LogPackFactory: Content/StarterContent/Props/Materials/M_MaterialSphere_Plain.uasset (58832) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Props/Materials/M_MaterialSphere_Plain.uasset
+[2016.06.16-23.44.24:875][  0]LogPackFactory: Content/StarterContent/Props/Materials/M_Rock.uasset (114715) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Props/Materials/M_Rock.uasset
+[2016.06.16-23.44.24:879][  0]LogPackFactory: Content/StarterContent/Props/Materials/M_Shelf.uasset (78255) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Props/Materials/M_Shelf.uasset
+[2016.06.16-23.44.24:882][  0]LogPackFactory: Content/StarterContent/Props/Materials/M_Statue.uasset (72790) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Props/Materials/M_Statue.uasset
+[2016.06.16-23.44.24:886][  0]LogPackFactory: Content/StarterContent/Props/Materials/M_StatueGlass.uasset (56436) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Props/Materials/M_StatueGlass.uasset
+[2016.06.16-23.44.24:889][  0]LogPackFactory: Content/StarterContent/Props/Materials/M_TableRound.uasset (89531) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Props/Materials/M_TableRound.uasset
+[2016.06.16-23.44.24:893][  0]LogPackFactory: Content/StarterContent/Props/MaterialSphere.uasset (174533) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Props/MaterialSphere.uasset
+[2016.06.16-23.44.24:897][  0]LogPackFactory: Content/StarterContent/Props/SM_Bush.uasset (152902) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Props/SM_Bush.uasset
+[2016.06.16-23.44.24:900][  0]LogPackFactory: Content/StarterContent/Props/SM_Chair.uasset (213058) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Props/SM_Chair.uasset
+[2016.06.16-23.44.24:905][  0]LogPackFactory: Content/StarterContent/Props/SM_CornerFrame.uasset (104587) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Props/SM_CornerFrame.uasset
+[2016.06.16-23.44.24:909][  0]LogPackFactory: Content/StarterContent/Props/SM_Couch.uasset (254658) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Props/SM_Couch.uasset
+[2016.06.16-23.44.24:913][  0]LogPackFactory: Content/StarterContent/Props/SM_Door.uasset (214917) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Props/SM_Door.uasset
+[2016.06.16-23.44.24:917][  0]LogPackFactory: Content/StarterContent/Props/SM_DoorFrame.uasset (65546) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Props/SM_DoorFrame.uasset
+[2016.06.16-23.44.24:920][  0]LogPackFactory: Content/StarterContent/Props/SM_GlassWindow.uasset (97538) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Props/SM_GlassWindow.uasset
+[2016.06.16-23.44.24:925][  0]LogPackFactory: Content/StarterContent/Props/SM_Lamp_Ceiling.uasset (318571) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Props/SM_Lamp_Ceiling.uasset
+[2016.06.16-23.44.24:930][  0]LogPackFactory: Content/StarterContent/Props/SM_Lamp_Wall.uasset (140246) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Props/SM_Lamp_Wall.uasset
+[2016.06.16-23.44.24:933][  0]LogPackFactory: Content/StarterContent/Props/SM_MatPreviewMesh_02.uasset (2396647) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Props/SM_MatPreviewMesh_02.uasset
+[2016.06.16-23.44.24:949][  0]LogPackFactory: Content/StarterContent/Props/SM_PillarFrame.uasset (127007) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Props/SM_PillarFrame.uasset
+[2016.06.16-23.44.24:953][  0]LogPackFactory: Content/StarterContent/Props/SM_PillarFrame300.uasset (124350) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Props/SM_PillarFrame300.uasset
+[2016.06.16-23.44.24:957][  0]LogPackFactory: Content/StarterContent/Props/SM_Rock.uasset (175516) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Props/SM_Rock.uasset
+[2016.06.16-23.44.24:963][  0]LogPackFactory: Content/StarterContent/Props/SM_Shelf.uasset (108862) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Props/SM_Shelf.uasset
+[2016.06.16-23.44.24:967][  0]LogPackFactory: Content/StarterContent/Props/SM_Stairs.uasset (66807) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Props/SM_Stairs.uasset
+[2016.06.16-23.44.24:974][  0]LogPackFactory: Content/StarterContent/Props/SM_Statue.uasset (537153) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Props/SM_Statue.uasset
+[2016.06.16-23.44.24:979][  0]LogPackFactory: Content/StarterContent/Props/SM_TableRound.uasset (528732) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Props/SM_TableRound.uasset
+[2016.06.16-23.44.24:985][  0]LogPackFactory: Content/StarterContent/Props/SM_WindowFrame.uasset (68758) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Props/SM_WindowFrame.uasset
+[2016.06.16-23.44.24:989][  0]LogPackFactory: Content/StarterContent/Shapes/Shape_Cone.uasset (94233) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Shapes/Shape_Cone.uasset
+[2016.06.16-23.44.24:994][  0]LogPackFactory: Content/StarterContent/Shapes/Shape_Cube.uasset (45498) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Shapes/Shape_Cube.uasset
+[2016.06.16-23.44.24:997][  0]LogPackFactory: Content/StarterContent/Shapes/Shape_Cylinder.uasset (109276) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Shapes/Shape_Cylinder.uasset
+[2016.06.16-23.44.25:000][  0]LogPackFactory: Content/StarterContent/Shapes/Shape_NarrowCapsule.uasset (211325) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Shapes/Shape_NarrowCapsule.uasset
+[2016.06.16-23.44.25:004][  0]LogPackFactory: Content/StarterContent/Shapes/Shape_Pipe.uasset (78407) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Shapes/Shape_Pipe.uasset
+[2016.06.16-23.44.25:007][  0]LogPackFactory: Content/StarterContent/Shapes/Shape_Pipe_180.uasset (193692) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Shapes/Shape_Pipe_180.uasset
+[2016.06.16-23.44.25:011][  0]LogPackFactory: Content/StarterContent/Shapes/Shape_Pipe_90.uasset (120200) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Shapes/Shape_Pipe_90.uasset
+[2016.06.16-23.44.25:015][  0]LogPackFactory: Content/StarterContent/Shapes/Shape_Plane.uasset (43121) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Shapes/Shape_Plane.uasset
+[2016.06.16-23.44.25:018][  0]LogPackFactory: Content/StarterContent/Shapes/Shape_QuadPyramid.uasset (43744) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Shapes/Shape_QuadPyramid.uasset
+[2016.06.16-23.44.25:022][  0]LogPackFactory: Content/StarterContent/Shapes/Shape_Sphere.uasset (264634) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Shapes/Shape_Sphere.uasset
+[2016.06.16-23.44.25:027][  0]LogPackFactory: Content/StarterContent/Shapes/Shape_Torus.uasset (558042) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Shapes/Shape_Torus.uasset
+[2016.06.16-23.44.25:033][  0]LogPackFactory: Content/StarterContent/Shapes/Shape_Trim.uasset (51867) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Shapes/Shape_Trim.uasset
+[2016.06.16-23.44.25:037][  0]LogPackFactory: Content/StarterContent/Shapes/Shape_Trim_90_In.uasset (74804) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Shapes/Shape_Trim_90_In.uasset
+[2016.06.16-23.44.25:041][  0]LogPackFactory: Content/StarterContent/Shapes/Shape_Trim_90_Out.uasset (75706) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Shapes/Shape_Trim_90_Out.uasset
+[2016.06.16-23.44.25:046][  0]LogPackFactory: Content/StarterContent/Shapes/Shape_TriPyramid.uasset (41629) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Shapes/Shape_TriPyramid.uasset
+[2016.06.16-23.44.25:049][  0]LogPackFactory: Content/StarterContent/Shapes/Shape_Tube.uasset (190123) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Shapes/Shape_Tube.uasset
+[2016.06.16-23.44.25:056][  0]LogPackFactory: Content/StarterContent/Shapes/Shape_Wedge_A.uasset (45020) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Shapes/Shape_Wedge_A.uasset
+[2016.06.16-23.44.25:059][  0]LogPackFactory: Content/StarterContent/Shapes/Shape_Wedge_B.uasset (40642) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Shapes/Shape_Wedge_B.uasset
+[2016.06.16-23.44.25:063][  0]LogPackFactory: Content/StarterContent/Shapes/Shape_WideCapsule.uasset (150007) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Shapes/Shape_WideCapsule.uasset
+[2016.06.16-23.44.25:067][  0]LogPackFactory: Content/StarterContent/Textures/Metal_Tile_2.uasset (446) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/Metal_Tile_2.uasset
+[2016.06.16-23.44.25:435][  0]LogPackFactory: Content/StarterContent/Textures/Metal_Tile_2_N.uasset (450) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/Metal_Tile_2_N.uasset
+[2016.06.16-23.44.25:478][  0]LogPackFactory: Content/StarterContent/Textures/Sky54a2048.uasset (446) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/Sky54a2048.uasset
+[2016.06.16-23.44.25:522][  0]LogPackFactory: Content/StarterContent/Textures/Sky54a2048LDR.uasset (449) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/Sky54a2048LDR.uasset
+[2016.06.16-23.44.25:552][  0]LogPackFactory: Content/StarterContent/Textures/T_ArmorMetal01.uasset (450) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_ArmorMetal01.uasset
+[2016.06.16-23.44.25:588][  0]LogPackFactory: Content/StarterContent/Textures/T_ArmorMetal01_N.uasset (452) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_ArmorMetal01_N.uasset
+[2016.06.16-23.44.25:640][  0]LogPackFactory: Content/StarterContent/Textures/T_Bark02_D.uasset (446) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Bark02_D.uasset
+[2016.06.16-23.44.25:677][  0]LogPackFactory: Content/StarterContent/Textures/T_Bark02_N.uasset (446) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Bark02_N.uasset
+[2016.06.16-23.44.25:733][  0]LogPackFactory: Content/StarterContent/Textures/T_Base_Metal_Gray_D.uasset (455) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Base_Metal_Gray_D.uasset
+[2016.06.16-23.44.25:788][  0]LogPackFactory: Content/StarterContent/Textures/T_Base_Metal_Gray_N.uasset (455) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Base_Metal_Gray_N.uasset
+[2016.06.16-23.44.25:818][  0]LogPackFactory: Content/StarterContent/Textures/T_Brick_Clay_Beveled_D.uasset (7649619) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Brick_Clay_Beveled_D.uasset
+[2016.06.16-23.44.25:860][  0]LogPackFactory: Content/StarterContent/Textures/T_Brick_Clay_Beveled_M.uasset (8326301) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Brick_Clay_Beveled_M.uasset
+[2016.06.16-23.44.25:927][  0]LogPackFactory: Content/StarterContent/Textures/T_Brick_Clay_Beveled_N.uasset (7553391) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Brick_Clay_Beveled_N.uasset
+[2016.06.16-23.44.26:017][  0]LogPackFactory: Content/StarterContent/Textures/T_Brick_Clay_New_D.uasset (6035708) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Brick_Clay_New_D.uasset
+[2016.06.16-23.44.26:148][  0]LogPackFactory: Content/StarterContent/Textures/T_Brick_Clay_New_M.uasset (9201530) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Brick_Clay_New_M.uasset
+[2016.06.16-23.44.26:255][  0]LogPackFactory: Content/StarterContent/Textures/T_Brick_Clay_New_N.uasset (7865847) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Brick_Clay_New_N.uasset
+[2016.06.16-23.44.26:353][  0]LogPackFactory: Content/StarterContent/Textures/T_Brick_Clay_Old_D.uasset (11424774) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Brick_Clay_Old_D.uasset
+[2016.06.16-23.44.26:527][  0]LogPackFactory: Content/StarterContent/Textures/T_Brick_Clay_Old_N.uasset (7794699) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Brick_Clay_Old_N.uasset
+[2016.06.16-23.44.26:604][  0]LogPackFactory: Content/StarterContent/Textures/T_Brick_Cut_Stone_D.uasset (13386492) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Brick_Cut_Stone_D.uasset
+[2016.06.16-23.44.26:789][  0]LogPackFactory: Content/StarterContent/Textures/T_Brick_Cut_Stone_N.uasset (6679434) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Brick_Cut_Stone_N.uasset
+[2016.06.16-23.44.26:865][  0]LogPackFactory: Content/StarterContent/Textures/T_Brick_Hewn_Stone_D.uasset (7446677) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Brick_Hewn_Stone_D.uasset
+[2016.06.16-23.44.26:954][  0]LogPackFactory: Content/StarterContent/Textures/T_Brick_Hewn_Stone_M.uasset (6802269) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Brick_Hewn_Stone_M.uasset
+[2016.06.16-23.44.27:033][  0]LogPackFactory: Content/StarterContent/Textures/T_Brick_Hewn_Stone_N.uasset (8992435) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Brick_Hewn_Stone_N.uasset
+[2016.06.16-23.44.27:182][  0]LogPackFactory: Content/StarterContent/Textures/T_Burst_M.uasset (150025) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Burst_M.uasset
+[2016.06.16-23.44.27:188][  0]LogPackFactory: Content/StarterContent/Textures/T_Bush_D.uasset (552540) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Bush_D.uasset
+[2016.06.16-23.44.27:195][  0]LogPackFactory: Content/StarterContent/Textures/T_Bush_N.uasset (396574) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Bush_N.uasset
+[2016.06.16-23.44.27:203][  0]LogPackFactory: Content/StarterContent/Textures/T_Ceramic_Tile_M.uasset (277243) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Ceramic_Tile_M.uasset
+[2016.06.16-23.44.27:209][  0]LogPackFactory: Content/StarterContent/Textures/T_Ceramic_Tile_N.uasset (228293) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Ceramic_Tile_N.uasset
+[2016.06.16-23.44.27:215][  0]LogPackFactory: Content/StarterContent/Textures/T_Chair_M.uasset (576769) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Chair_M.uasset
+[2016.06.16-23.44.27:222][  0]LogPackFactory: Content/StarterContent/Textures/T_Chair_N.uasset (1937145) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Chair_N.uasset
+[2016.06.16-23.44.27:239][  0]LogPackFactory: Content/StarterContent/Textures/T_Checker_Noise_M.uasset (158406) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Checker_Noise_M.uasset
+[2016.06.16-23.44.27:244][  0]LogPackFactory: Content/StarterContent/Textures/T_Cliff_M.uasset (432) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Cliff_M.uasset
+[2016.06.16-23.44.27:468][  0]LogPackFactory: Content/StarterContent/Textures/T_Cliff_N.uasset (432) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Cliff_N.uasset
+[2016.06.16-23.44.27:519][  0]LogPackFactory: Content/StarterContent/Textures/T_Cobble_01_H.uasset (449) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Cobble_01_H.uasset
+[2016.06.16-23.44.27:549][  0]LogPackFactory: Content/StarterContent/Textures/T_CobbleDark_01_D.uasset (453) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_CobbleDark_01_D.uasset
+[2016.06.16-23.44.27:585][  0]LogPackFactory: Content/StarterContent/Textures/T_CobbleStone_04_D.uasset (454) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_CobbleStone_04_D.uasset
+[2016.06.16-23.44.27:615][  0]LogPackFactory: Content/StarterContent/Textures/T_CobbleStone_04_N.uasset (454) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_CobbleStone_04_N.uasset
+[2016.06.16-23.44.27:663][  0]LogPackFactory: Content/StarterContent/Textures/T_CobbleStone_04_R.uasset (454) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_CobbleStone_04_R.uasset
+[2016.06.16-23.44.27:693][  0]LogPackFactory: Content/StarterContent/Textures/T_CobbleStone_04b_D.uasset (455) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_CobbleStone_04b_D.uasset
+[2016.06.16-23.44.27:730][  0]LogPackFactory: Content/StarterContent/Textures/T_CobbleStone_Pebble_D.uasset (11812314) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_CobbleStone_Pebble_D.uasset
+[2016.06.16-23.44.27:799][  0]LogPackFactory: Content/StarterContent/Textures/T_CobbleStone_Pebble_M.uasset (1313598) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_CobbleStone_Pebble_M.uasset
+[2016.06.16-23.44.27:825][  0]LogPackFactory: Content/StarterContent/Textures/T_CobbleStone_Pebble_N.uasset (11858728) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_CobbleStone_Pebble_N.uasset
+[2016.06.16-23.44.28:011][  0]LogPackFactory: Content/StarterContent/Textures/T_CobbleStone_Rough_D.uasset (2936250) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_CobbleStone_Rough_D.uasset
+[2016.06.16-23.44.28:053][  0]LogPackFactory: Content/StarterContent/Textures/T_CobbleStone_Rough_N.uasset (2700400) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_CobbleStone_Rough_N.uasset
+[2016.06.16-23.44.28:087][  0]LogPackFactory: Content/StarterContent/Textures/T_CobbleStone_Smooth_D.uasset (6603341) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_CobbleStone_Smooth_D.uasset
+[2016.06.16-23.44.28:187][  0]LogPackFactory: Content/StarterContent/Textures/T_CobbleStone_Smooth_M.uasset (5739577) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_CobbleStone_Smooth_M.uasset
+[2016.06.16-23.44.28:287][  0]LogPackFactory: Content/StarterContent/Textures/T_CobbleStone_Smooth_N.uasset (8846507) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_CobbleStone_Smooth_N.uasset
+[2016.06.16-23.44.28:428][  0]LogPackFactory: Content/StarterContent/Textures/T_Concrete01_D.uasset (450) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Concrete01_D.uasset
+[2016.06.16-23.44.28:667][  0]LogPackFactory: Content/StarterContent/Textures/T_Concrete01_N.uasset (450) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Concrete01_N.uasset
+[2016.06.16-23.44.28:717][  0]LogPackFactory: Content/StarterContent/Textures/T_Concrete_01_D.uasset (451) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Concrete_01_D.uasset
+[2016.06.16-23.44.28:758][  0]LogPackFactory: Content/StarterContent/Textures/T_Concrete_01_N.uasset (451) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Concrete_01_N.uasset
+[2016.06.16-23.44.28:795][  0]LogPackFactory: Content/StarterContent/Textures/T_Concrete_D.uasset (448) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Concrete_D.uasset
+[2016.06.16-23.44.28:850][  0]LogPackFactory: Content/StarterContent/Textures/T_Concrete_Floor01.uasset (454) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Concrete_Floor01.uasset
+[2016.06.16-23.44.28:905][  0]LogPackFactory: Content/StarterContent/Textures/T_Concrete_Floor01_N.uasset (456) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Concrete_Floor01_N.uasset
+[2016.06.16-23.44.28:961][  0]LogPackFactory: Content/StarterContent/Textures/T_Concrete_Grime_D.uasset (10691506) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Concrete_Grime_D.uasset
+[2016.06.16-23.44.29:035][  0]LogPackFactory: Content/StarterContent/Textures/T_Concrete_N.uasset (448) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Concrete_N.uasset
+[2016.06.16-23.44.29:216][  0]LogPackFactory: Content/StarterContent/Textures/T_Concrete_Panels_D.uasset (8513286) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Concrete_Panels_D.uasset
+[2016.06.16-23.44.29:274][  0]LogPackFactory: Content/StarterContent/Textures/T_Concrete_Panels_N.uasset (6558914) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Concrete_Panels_N.uasset
+[2016.06.16-23.44.29:325][  0]LogPackFactory: Content/StarterContent/Textures/T_Concrete_Poured_D.uasset (11600993) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Concrete_Poured_D.uasset
+[2016.06.16-23.44.29:497][  0]LogPackFactory: Content/StarterContent/Textures/T_Concrete_Poured_N.uasset (7452814) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Concrete_Poured_N.uasset
+[2016.06.16-23.44.29:598][  0]LogPackFactory: Content/StarterContent/Textures/T_Concrete_Tiles_D.uasset (4956380) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Concrete_Tiles_D.uasset
+[2016.06.16-23.44.29:669][  0]LogPackFactory: Content/StarterContent/Textures/T_Concrete_Tiles_M.uasset (5759659) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Concrete_Tiles_M.uasset
+[2016.06.16-23.44.29:775][  0]LogPackFactory: Content/StarterContent/Textures/T_Concrete_Tiles_N.uasset (6611650) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Concrete_Tiles_N.uasset
+[2016.06.16-23.44.29:873][  0]LogPackFactory: Content/StarterContent/Textures/T_Concrete_Tiles_Variation_M.uasset (4809) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Concrete_Tiles_Variation_M.uasset
+[2016.06.16-23.44.29:875][  0]LogPackFactory: Content/StarterContent/Textures/T_Concrete_Wall07.uasset (453) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Concrete_Wall07.uasset
+[2016.06.16-23.44.30:110][  0]LogPackFactory: Content/StarterContent/Textures/T_Concrete_Wall07_N.uasset (455) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Concrete_Wall07_N.uasset
+[2016.06.16-23.44.30:145][  0]LogPackFactory: Content/StarterContent/Textures/T_Concrete_Wall_D.uasset (453) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Concrete_Wall_D.uasset
+[2016.06.16-23.44.30:182][  0]LogPackFactory: Content/StarterContent/Textures/T_Concrete_Wall_N.uasset (453) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Concrete_Wall_N.uasset
+[2016.06.16-23.44.30:240][  0]LogPackFactory: Content/StarterContent/Textures/T_DesertCrystal01_N.uasset (455) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_DesertCrystal01_N.uasset
+[2016.06.16-23.44.30:265][  0]LogPackFactory: Content/StarterContent/Textures/T_Detail_Rocky_N.uasset (2850093) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Detail_Rocky_N.uasset
+[2016.06.16-23.44.30:282][  0]LogPackFactory: Content/StarterContent/Textures/T_Dirt_D.uasset (444) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Dirt_D.uasset
+[2016.06.16-23.44.30:411][  0]LogPackFactory: Content/StarterContent/Textures/T_Dirt_N.uasset (444) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Dirt_N.uasset
+[2016.06.16-23.44.30:448][  0]LogPackFactory: Content/StarterContent/Textures/T_Door_M.uasset (554190) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Door_M.uasset
+[2016.06.16-23.44.30:453][  0]LogPackFactory: Content/StarterContent/Textures/T_Door_N.uasset (1074859) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Door_N.uasset
+[2016.06.16-23.44.30:462][  0]LogPackFactory: Content/StarterContent/Textures/T_Dust_Particle_D.uasset (32071) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Dust_Particle_D.uasset
+[2016.06.16-23.44.30:465][  0]LogPackFactory: Content/StarterContent/Textures/T_Explosion_SubUV.uasset (3004336) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Explosion_SubUV.uasset
+[2016.06.16-23.44.30:483][  0]LogPackFactory: Content/StarterContent/Textures/T_Fire_SubUV.uasset (525012) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Fire_SubUV.uasset
+[2016.06.16-23.44.30:489][  0]LogPackFactory: Content/StarterContent/Textures/T_Fire_Tiled_D.uasset (553370) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Fire_Tiled_D.uasset
+[2016.06.16-23.44.30:495][  0]LogPackFactory: Content/StarterContent/Textures/T_Frame_M.uasset (536068) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Frame_M.uasset
+[2016.06.16-23.44.30:512][  0]LogPackFactory: Content/StarterContent/Textures/T_Frame_N.uasset (1249187) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Frame_N.uasset
+[2016.06.16-23.44.30:522][  0]LogPackFactory: Content/StarterContent/Textures/T_Generic_Concrete_Base02.uasset (461) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Generic_Concrete_Base02.uasset
+[2016.06.16-23.44.30:703][  0]LogPackFactory: Content/StarterContent/Textures/T_Generic_Concrete_Base02_N.uasset (463) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Generic_Concrete_Base02_N.uasset
+[2016.06.16-23.44.30:734][  0]LogPackFactory: Content/StarterContent/Textures/T_Generic_Concrete_Base04_D.uasset (463) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Generic_Concrete_Base04_D.uasset
+[2016.06.16-23.44.30:770][  0]LogPackFactory: Content/StarterContent/Textures/T_Generic_Concrete_Base04_N.uasset (463) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Generic_Concrete_Base04_N.uasset
+[2016.06.16-23.44.30:825][  0]LogPackFactory: Content/StarterContent/Textures/T_Generic_Concrete_Base_06.uasset (462) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Generic_Concrete_Base_06.uasset
+[2016.06.16-23.44.30:855][  0]LogPackFactory: Content/StarterContent/Textures/T_Generic_Concrete_Base_06_N.uasset (464) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Generic_Concrete_Base_06_N.uasset
+[2016.06.16-23.44.30:892][  0]LogPackFactory: Content/StarterContent/Textures/T_Generic_Concrete_Base_07.uasset (462) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Generic_Concrete_Base_07.uasset
+[2016.06.16-23.44.30:922][  0]LogPackFactory: Content/StarterContent/Textures/T_Generic_Concrete_Base_07_N.uasset (464) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Generic_Concrete_Base_07_N.uasset
+[2016.06.16-23.44.30:958][  0]LogPackFactory: Content/StarterContent/Textures/T_Gradinet_01.uasset (5447) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Gradinet_01.uasset
+[2016.06.16-23.44.30:960][  0]LogPackFactory: Content/StarterContent/Textures/T_Gravel_D.uasset (425) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Gravel_D.uasset
+[2016.06.16-23.44.31:012][  0]LogPackFactory: Content/StarterContent/Textures/T_Gravel_N.uasset (425) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Gravel_N.uasset
+[2016.06.16-23.44.31:058][  0]LogPackFactory: Content/StarterContent/Textures/T_Ground_01_D.uasset (449) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Ground_01_D.uasset
+[2016.06.16-23.44.31:088][  0]LogPackFactory: Content/StarterContent/Textures/T_Ground_01_N.uasset (449) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Ground_01_N.uasset
+[2016.06.16-23.44.31:124][  0]LogPackFactory: Content/StarterContent/Textures/T_Ground_02_D.uasset (449) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Ground_02_D.uasset
+[2016.06.16-23.44.31:174][  0]LogPackFactory: Content/StarterContent/Textures/T_Ground_02_N.uasset (449) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Ground_02_N.uasset
+[2016.06.16-23.44.31:222][  0]LogPackFactory: Content/StarterContent/Textures/T_Ground_Detail_N.uasset (453) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Ground_Detail_N.uasset
+[2016.06.16-23.44.31:258][  0]LogPackFactory: Content/StarterContent/Textures/T_Ground_Dirt_D.uasset (451) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Ground_Dirt_D.uasset
+[2016.06.16-23.44.31:289][  0]LogPackFactory: Content/StarterContent/Textures/T_Ground_Dirt_N.uasset (451) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Ground_Dirt_N.uasset
+[2016.06.16-23.44.31:335][  0]LogPackFactory: Content/StarterContent/Textures/T_Ground_Grass_D.uasset (12014827) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Ground_Grass_D.uasset
+[2016.06.16-23.44.31:415][  0]LogPackFactory: Content/StarterContent/Textures/T_Ground_Grass_N.uasset (11617917) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Ground_Grass_N.uasset
+[2016.06.16-23.44.31:628][  0]LogPackFactory: Content/StarterContent/Textures/T_Ground_Gravel_D.uasset (10627659) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Ground_Gravel_D.uasset
+[2016.06.16-23.44.31:792][  0]LogPackFactory: Content/StarterContent/Textures/T_Ground_Gravel_N.uasset (7408581) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Ground_Gravel_N.uasset
+[2016.06.16-23.44.31:892][  0]LogPackFactory: Content/StarterContent/Textures/T_ground_Moss_D.uasset (13034653) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_ground_Moss_D.uasset
+[2016.06.16-23.44.32:085][  0]LogPackFactory: Content/StarterContent/Textures/T_Ground_Moss_N.uasset (8389816) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Ground_Moss_N.uasset
+[2016.06.16-23.44.32:199][  0]LogPackFactory: Content/StarterContent/Textures/T_Ground_Noise_N.uasset (431) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Ground_Noise_N.uasset
+[2016.06.16-23.44.32:400][  0]LogPackFactory: Content/StarterContent/Textures/T_Lamp_M.uasset (781809) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Lamp_M.uasset
+[2016.06.16-23.44.32:407][  0]LogPackFactory: Content/StarterContent/Textures/T_Lamp_N.uasset (2076923) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Lamp_N.uasset
+[2016.06.16-23.44.32:421][  0]LogPackFactory: Content/StarterContent/Textures/T_MacroVariation.uasset (10882792) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_MacroVariation.uasset
+[2016.06.16-23.44.32:548][  0]LogPackFactory: Content/StarterContent/Textures/T_Metal_Aluminum_D.uasset (9680629) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Metal_Aluminum_D.uasset
+[2016.06.16-23.44.32:678][  0]LogPackFactory: Content/StarterContent/Textures/T_Metal_Copper_D.uasset (8854788) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Metal_Copper_D.uasset
+[2016.06.16-23.44.32:810][  0]LogPackFactory: Content/StarterContent/Textures/T_Metal_Dark_Gun_metal_E.uasset (460) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Metal_Dark_Gun_metal_E.uasset
+[2016.06.16-23.44.33:065][  0]LogPackFactory: Content/StarterContent/Textures/T_Metal_Dark_Gun_metal_N.uasset (460) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Metal_Dark_Gun_metal_N.uasset
+[2016.06.16-23.44.33:111][  0]LogPackFactory: Content/StarterContent/Textures/T_Metal_Gold_D.uasset (8838906) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Metal_Gold_D.uasset
+[2016.06.16-23.44.33:173][  0]LogPackFactory: Content/StarterContent/Textures/T_Metal_Gold_N.uasset (2813572) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Metal_Gold_N.uasset
+[2016.06.16-23.44.33:194][  0]LogPackFactory: Content/StarterContent/Textures/T_Metal_Metal01_D.uasset (453) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Metal_Metal01_D.uasset
+[2016.06.16-23.44.33:399][  0]LogPackFactory: Content/StarterContent/Textures/T_Metal_Metal01_N.uasset (453) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Metal_Metal01_N.uasset
+[2016.06.16-23.44.33:432][  0]LogPackFactory: Content/StarterContent/Textures/T_Metal_Metal03_D.uasset (453) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Metal_Metal03_D.uasset
+[2016.06.16-23.44.33:477][  0]LogPackFactory: Content/StarterContent/Textures/T_Metal_Metal03_N.uasset (453) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Metal_Metal03_N.uasset
+[2016.06.16-23.44.33:509][  0]LogPackFactory: Content/StarterContent/Textures/T_Metal_Painted_04_D.uasset (456) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Metal_Painted_04_D.uasset
+[2016.06.16-23.44.33:554][  0]LogPackFactory: Content/StarterContent/Textures/T_Metal_Painted_04_N.uasset (456) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Metal_Painted_04_N.uasset
+[2016.06.16-23.44.33:587][  0]LogPackFactory: Content/StarterContent/Textures/T_Metal_Rust_01_D.uasset (453) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Metal_Rust_01_D.uasset
+[2016.06.16-23.44.33:621][  0]LogPackFactory: Content/StarterContent/Textures/T_Metal_Rust_01_N.uasset (453) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Metal_Rust_01_N.uasset
+[2016.06.16-23.44.33:653][  0]LogPackFactory: Content/StarterContent/Textures/T_Metal_Rust_D.uasset (9329320) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Metal_Rust_D.uasset
+[2016.06.16-23.44.33:726][  0]LogPackFactory: Content/StarterContent/Textures/T_Metal_Rust_N.uasset (7504761) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Metal_Rust_N.uasset
+[2016.06.16-23.44.33:825][  0]LogPackFactory: Content/StarterContent/Textures/T_Metal_Scuffed_D.uasset (453) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Metal_Scuffed_D.uasset
+[2016.06.16-23.44.34:065][  0]LogPackFactory: Content/StarterContent/Textures/T_Metal_Scuffed_N.uasset (453) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Metal_Scuffed_N.uasset
+[2016.06.16-23.44.34:131][  0]LogPackFactory: Content/StarterContent/Textures/T_Metal_Steel_D.uasset (3581726) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Metal_Steel_D.uasset
+[2016.06.16-23.44.34:165][  0]LogPackFactory: Content/StarterContent/Textures/T_Metal_Steel_N.uasset (4922590) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Metal_Steel_N.uasset
+[2016.06.16-23.44.34:212][  0]LogPackFactory: Content/StarterContent/Textures/T_Paint_Metal_Rust_D.uasset (456) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Paint_Metal_Rust_D.uasset
+[2016.06.16-23.44.34:419][  0]LogPackFactory: Content/StarterContent/Textures/T_Paint_Metal_Rust_N.uasset (456) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Paint_Metal_Rust_N.uasset
+[2016.06.16-23.44.34:464][  0]LogPackFactory: Content/StarterContent/Textures/T_PaintedMetal01.uasset (452) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_PaintedMetal01.uasset
+[2016.06.16-23.44.34:508][  0]LogPackFactory: Content/StarterContent/Textures/T_PaintedMetal01_N.uasset (454) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_PaintedMetal01_N.uasset
+[2016.06.16-23.44.34:552][  0]LogPackFactory: Content/StarterContent/Textures/T_PatchyGrass_D.uasset (451) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_PatchyGrass_D.uasset
+[2016.06.16-23.44.34:597][  0]LogPackFactory: Content/StarterContent/Textures/T_PatchyGrass_N.uasset (451) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_PatchyGrass_N.uasset
+[2016.06.16-23.44.34:641][  0]LogPackFactory: Content/StarterContent/Textures/T_Perlin_Noise_M.uasset (7869402) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Perlin_Noise_M.uasset
+[2016.06.16-23.44.34:697][  0]LogPackFactory: Content/StarterContent/Textures/T_Rock_01_D.uasset (447) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Rock_01_D.uasset
+[2016.06.16-23.44.34:885][  0]LogPackFactory: Content/StarterContent/Textures/T_Rock_01_N.uasset (447) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Rock_01_N.uasset
+[2016.06.16-23.44.34:930][  0]LogPackFactory: Content/StarterContent/Textures/T_Rock_03_D.uasset (447) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Rock_03_D.uasset
+[2016.06.16-23.44.34:974][  0]LogPackFactory: Content/StarterContent/Textures/T_Rock_03_N.uasset (447) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Rock_03_N.uasset
+[2016.06.16-23.44.35:007][  0]LogPackFactory: Content/StarterContent/Textures/T_Rock_05_D.uasset (447) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Rock_05_D.uasset
+[2016.06.16-23.44.35:052][  0]LogPackFactory: Content/StarterContent/Textures/T_Rock_05_N.uasset (447) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Rock_05_N.uasset
+[2016.06.16-23.44.35:096][  0]LogPackFactory: Content/StarterContent/Textures/T_Rock_06_D.uasset (447) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Rock_06_D.uasset
+[2016.06.16-23.44.35:141][  0]LogPackFactory: Content/StarterContent/Textures/T_Rock_06_N.uasset (447) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Rock_06_N.uasset
+[2016.06.16-23.44.35:185][  0]LogPackFactory: Content/StarterContent/Textures/T_Rock_07_D.uasset (447) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Rock_07_D.uasset
+[2016.06.16-23.44.35:229][  0]LogPackFactory: Content/StarterContent/Textures/T_Rock_07_N.uasset (447) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Rock_07_N.uasset
+[2016.06.16-23.44.35:263][  0]LogPackFactory: Content/StarterContent/Textures/T_Rock_07b_D.uasset (448) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Rock_07b_D.uasset
+[2016.06.16-23.44.35:307][  0]LogPackFactory: Content/StarterContent/Textures/T_Rock_08_D.uasset (447) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Rock_08_D.uasset
+[2016.06.16-23.44.35:351][  0]LogPackFactory: Content/StarterContent/Textures/T_Rock_08_N.uasset (447) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Rock_08_N.uasset
+[2016.06.16-23.44.35:395][  0]LogPackFactory: Content/StarterContent/Textures/T_Rock_09_D.uasset (447) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Rock_09_D.uasset
+[2016.06.16-23.44.35:440][  0]LogPackFactory: Content/StarterContent/Textures/T_Rock_10_D.uasset (447) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Rock_10_D.uasset
+[2016.06.16-23.44.35:473][  0]LogPackFactory: Content/StarterContent/Textures/T_Rock_10_N.uasset (447) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Rock_10_N.uasset
+[2016.06.16-23.44.35:518][  0]LogPackFactory: Content/StarterContent/Textures/T_Rock_11b_D.uasset (448) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Rock_11b_D.uasset
+[2016.06.16-23.44.35:562][  0]LogPackFactory: Content/StarterContent/Textures/T_Rock_Basalt_D.uasset (9359943) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Rock_Basalt_D.uasset
+[2016.06.16-23.44.35:630][  0]LogPackFactory: Content/StarterContent/Textures/T_Rock_Basalt_N.uasset (7847129) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Rock_Basalt_N.uasset
+[2016.06.16-23.44.35:720][  0]LogPackFactory: Content/StarterContent/Textures/T_Rock_Detail_02_D.uasset (454) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Rock_Detail_02_D.uasset
+[2016.06.16-23.44.35:951][  0]LogPackFactory: Content/StarterContent/Textures/T_Rock_Detail_02_N.uasset (454) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Rock_Detail_02_N.uasset
+[2016.06.16-23.44.36:006][  0]LogPackFactory: Content/StarterContent/Textures/T_Rock_Detail_03_D.uasset (454) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Rock_Detail_03_D.uasset
+[2016.06.16-23.44.36:039][  0]LogPackFactory: Content/StarterContent/Textures/T_Rock_Marble_Polished_D.uasset (5327483) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Rock_Marble_Polished_D.uasset
+[2016.06.16-23.44.36:081][  0]LogPackFactory: Content/StarterContent/Textures/T_Rock_Sandstone_D.uasset (9234423) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Rock_Sandstone_D.uasset
+[2016.06.16-23.44.36:213][  0]LogPackFactory: Content/StarterContent/Textures/T_Rock_Sandstone_N.uasset (8399811) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Rock_Sandstone_N.uasset
+[2016.06.16-23.44.36:594][  0]LogPackFactory: Content/StarterContent/Textures/T_Rock_Slate_D.uasset (12333988) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Rock_Slate_D.uasset
+[2016.06.16-23.44.36:666][  0]LogPackFactory: Content/StarterContent/Textures/T_Rock_Slate_N.uasset (9649859) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Rock_Slate_N.uasset
+[2016.06.16-23.44.36:932][  0]LogPackFactory: Content/StarterContent/Textures/T_Rock_Smooth_Granite_D.uasset (8829490) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Rock_Smooth_Granite_D.uasset
+[2016.06.16-23.44.37:134][  0]LogPackFactory: Content/StarterContent/Textures/T_RockMesh_M.uasset (2706973) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_RockMesh_M.uasset
+[2016.06.16-23.44.37:188][  0]LogPackFactory: Content/StarterContent/Textures/T_RockMesh_N.uasset (5375053) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_RockMesh_N.uasset
+[2016.06.16-23.44.37:302][  0]LogPackFactory: Content/StarterContent/Textures/T_Rocky_01_N.uasset (448) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Rocky_01_N.uasset
+[2016.06.16-23.44.37:592][  0]LogPackFactory: Content/StarterContent/Textures/T_Shelf_M.uasset (651298) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Shelf_M.uasset
+[2016.06.16-23.44.37:609][  0]LogPackFactory: Content/StarterContent/Textures/T_Shelf_N.uasset (1639501) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Shelf_N.uasset
+[2016.06.16-23.44.37:631][  0]LogPackFactory: Content/StarterContent/Textures/T_Single_Tile_N.uasset (6402) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Single_Tile_N.uasset
+[2016.06.16-23.44.37:634][  0]LogPackFactory: Content/StarterContent/Textures/T_Sky_Clouds_M.uasset (450) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Sky_Clouds_M.uasset
+[2016.06.16-23.44.37:769][  0]LogPackFactory: Content/StarterContent/Textures/T_Sky_Stars.uasset (447) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Sky_Stars.uasset
+[2016.06.16-23.44.37:826][  0]LogPackFactory: Content/StarterContent/Textures/T_Smoke_SubUV.uasset (2630744) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Smoke_SubUV.uasset
+[2016.06.16-23.44.37:845][  0]LogPackFactory: Content/StarterContent/Textures/T_Smoke_Tiled_D.uasset (91431) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Smoke_Tiled_D.uasset
+[2016.06.16-23.44.37:853][  0]LogPackFactory: Content/StarterContent/Textures/T_Spark_Core.uasset (162316) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Spark_Core.uasset
+[2016.06.16-23.44.37:860][  0]LogPackFactory: Content/StarterContent/Textures/T_Statue_M.uasset (546786) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Statue_M.uasset
+[2016.06.16-23.44.37:870][  0]LogPackFactory: Content/StarterContent/Textures/T_Statue_N.uasset (515360) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Statue_N.uasset
+[2016.06.16-23.44.37:879][  0]LogPackFactory: Content/StarterContent/Textures/T_Stone_Brick_D.uasset (451) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Stone_Brick_D.uasset
+[2016.06.16-23.44.38:107][  0]LogPackFactory: Content/StarterContent/Textures/T_Stone_Brick_N.uasset (451) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Stone_Brick_N.uasset
+[2016.06.16-23.44.38:158][  0]LogPackFactory: Content/StarterContent/Textures/T_TableRound_M.uasset (870486) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_TableRound_M.uasset
+[2016.06.16-23.44.38:165][  0]LogPackFactory: Content/StarterContent/Textures/T_TableRound_N.uasset (1549086) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_TableRound_N.uasset
+[2016.06.16-23.44.38:176][  0]LogPackFactory: Content/StarterContent/Textures/T_Tech_Dot_M.uasset (107174) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Tech_Dot_M.uasset
+[2016.06.16-23.44.38:180][  0]LogPackFactory: Content/StarterContent/Textures/T_Tech_Dot_N.uasset (202333) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Tech_Dot_N.uasset
+[2016.06.16-23.44.38:184][  0]LogPackFactory: Content/StarterContent/Textures/T_Tech_Hex_Tile_M.uasset (793459) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Tech_Hex_Tile_M.uasset
+[2016.06.16-23.44.38:191][  0]LogPackFactory: Content/StarterContent/Textures/T_Tech_Hex_Tile_N.uasset (493875) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Tech_Hex_Tile_N.uasset
+[2016.06.16-23.44.38:197][  0]LogPackFactory: Content/StarterContent/Textures/T_Tech_Panel_M.uasset (979689) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Tech_Panel_M.uasset
+[2016.06.16-23.44.38:205][  0]LogPackFactory: Content/StarterContent/Textures/T_Tech_Panel_N.uasset (1860674) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Tech_Panel_N.uasset
+[2016.06.16-23.44.38:217][  0]LogPackFactory: Content/StarterContent/Textures/T_Underground_Base_Pipe_D.uasset (461) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Underground_Base_Pipe_D.uasset
+[2016.06.16-23.44.38:469][  0]LogPackFactory: Content/StarterContent/Textures/T_Underground_Base_Pipe_N.uasset (461) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Underground_Base_Pipe_N.uasset
+[2016.06.16-23.44.38:513][  0]LogPackFactory: Content/StarterContent/Textures/T_UNV_Concrete02.uasset (452) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_UNV_Concrete02.uasset
+[2016.06.16-23.44.38:558][  0]LogPackFactory: Content/StarterContent/Textures/T_UNV_Concrete02_N.uasset (454) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_UNV_Concrete02_N.uasset
+[2016.06.16-23.44.38:602][  0]LogPackFactory: Content/StarterContent/Textures/T_Water_M.uasset (1696467) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Water_M.uasset
+[2016.06.16-23.44.38:613][  0]LogPackFactory: Content/StarterContent/Textures/T_Water_N.uasset (2087420) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Water_N.uasset
+[2016.06.16-23.44.38:627][  0]LogPackFactory: Content/StarterContent/Textures/T_White_Painted_Metal_D.uasset (459) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_White_Painted_Metal_D.uasset
+[2016.06.16-23.44.38:791][  0]LogPackFactory: Content/StarterContent/Textures/T_White_Painted_Metal_N.uasset (459) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_White_Painted_Metal_N.uasset
+[2016.06.16-23.44.38:835][  0]LogPackFactory: Content/StarterContent/Textures/T_Wood_a_d.uasset (446) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Wood_a_d.uasset
+[2016.06.16-23.44.38:880][  0]LogPackFactory: Content/StarterContent/Textures/T_Wood_A_N.uasset (446) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Wood_A_N.uasset
+[2016.06.16-23.44.38:924][  0]LogPackFactory: Content/StarterContent/Textures/T_Wood_A_S.uasset (446) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Wood_A_S.uasset
+[2016.06.16-23.44.38:969][  0]LogPackFactory: Content/StarterContent/Textures/T_Wood_Floor_Walnut_D.uasset (4584206) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Wood_Floor_Walnut_D.uasset
+[2016.06.16-23.44.39:002][  0]LogPackFactory: Content/StarterContent/Textures/T_Wood_Floor_Walnut_M.uasset (3940729) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Wood_Floor_Walnut_M.uasset
+[2016.06.16-23.44.39:025][  0]LogPackFactory: Content/StarterContent/Textures/T_Wood_Floor_Walnut_N.uasset (2858538) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Wood_Floor_Walnut_N.uasset
+[2016.06.16-23.44.39:051][  0]LogPackFactory: Content/StarterContent/Textures/T_Wood_Oak_D.uasset (6707252) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Wood_Oak_D.uasset
+[2016.06.16-23.44.39:164][  0]LogPackFactory: Content/StarterContent/Textures/T_Wood_Oak_N.uasset (6245295) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Wood_Oak_N.uasset
+[2016.06.16-23.44.39:277][  0]LogPackFactory: Content/StarterContent/Textures/T_Wood_Pine_D.uasset (9690724) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Wood_Pine_D.uasset
+[2016.06.16-23.44.39:445][  0]LogPackFactory: Content/StarterContent/Textures/T_Wood_Pine_N.uasset (3467174) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Wood_Pine_N.uasset
+[2016.06.16-23.44.39:505][  0]LogPackFactory: Content/StarterContent/Textures/T_Wood_Walnut_D.uasset (6509713) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Wood_Walnut_D.uasset
+[2016.06.16-23.44.39:611][  0]LogPackFactory: Content/StarterContent/Textures/T_Wood_Walnut_N.uasset (3836013) -> ../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Textures/T_Wood_Walnut_N.uasset
+[2016.06.16-23.44.39:683][  0]LogPackFactory: Finished extracting 750 files (including 0 errors).
+[2016.06.16-23.44.40:020][  0]LogRenderer:Warning: Reallocating scene render targets to support 256x256 (Frame:2).
+[2016.06.16-23.44.40:413][  0]LogSavePackage: Save=297.032684ms
+[2016.06.16-23.44.40:413][  0]LogSavePackage: Moving '../../../../../../Unreal Engine Projects/UE4-Survival-Game/Saved/Floor_400x400062877764BE5B65C2EB71B8243D88B7B.tmp' to '../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/StarterContent/Architecture/Floor_400x400.uasset'
+[2016.06.16-23.44.40:560][  0]LogFeaturePack:Warning: Inserted 1 feature packs
+[2016.06.16-23.44.40:600][  0]Cmd: MAP LOAD FILE="../../../../../../Unreal Engine Projects/UE4-Survival-Game/Content/Maps/DefaultMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2016.06.16-23.44.40:600][  0]LightingResults: New page: Lighting Build
+[2016.06.16-23.44.40:608][  0]MapCheck: New page: Map Check
+[2016.06.16-23.44.40:608][  0]LightingResults: New page: Lighting Build
+[2016.06.16-23.44.40:614][  0]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000276C0231440
+[2016.06.16-23.44.42:206][  0]LogSkinnedMeshComp:Warning: GetSocketByName(): No SkeletalMesh for WeaponMesh3P
+[2016.06.16-23.44.42:206][  0]LogSkinnedMeshComp:Warning: GetSocketByName(): No SkeletalMesh for WeaponMesh3P
+[2016.06.16-23.44.42:206][  0]LogSkinnedMeshComp:Warning: GetSocketByName(): No SkeletalMesh for WeaponMesh3P
+[2016.06.16-23.44.42:207][  0]LogSkinnedMeshComp:Warning: GetSocketByName(): No SkeletalMesh for WeaponMesh3P
+[2016.06.16-23.44.42:207][  0]LogSkinnedMeshComp:Warning: GetSocketByName(): No SkeletalMesh for WeaponMesh3P
+[2016.06.16-23.44.42:207][  0]LogSkinnedMeshComp:Warning: GetSocketByName(): No SkeletalMesh for WeaponMesh3P
+[2016.06.16-23.44.42:207][  0]LogSkinnedMeshComp:Warning: GetSocketByName(): No SkeletalMesh for WeaponMesh3P
+[2016.06.16-23.44.42:247][  0]LogSkinnedMeshComp:Warning: GetSocketByName(): No SkeletalMesh for WeaponMesh3P
+[2016.06.16-23.44.42:247][  0]LogSkinnedMeshComp:Warning: GetSocketByName(): No SkeletalMesh for WeaponMesh3P
+[2016.06.16-23.44.42:247][  0]LogSkinnedMeshComp:Warning: GetSocketByName(): No SkeletalMesh for WeaponMesh3P
+[2016.06.16-23.44.42:247][  0]LogSkinnedMeshComp:Warning: GetSocketByName(): No SkeletalMesh for WeaponMesh3P
+[2016.06.16-23.44.42:247][  0]LogSkinnedMeshComp:Warning: GetSocketByName(): No SkeletalMesh for WeaponMesh3P
+[2016.06.16-23.44.42:247][  0]LogSkinnedMeshComp:Warning: GetSocketByName(): No SkeletalMesh for WeaponMesh3P
+[2016.06.16-23.44.42:247][  0]LogSkinnedMeshComp:Warning: GetSocketByName(): No SkeletalMesh for WeaponMesh3P
+[2016.06.16-23.44.42:556][  0]LogTexture:Display: Building textures: T_Bird_D (AutoDXT)
+[2016.06.16-23.44.42:693][  0]LogTexture:Display: Building textures: T_Bird_N (BC5)
+[2016.06.16-23.44.42:718][  0]LogMaterial: Missing cached shader map for material M_Bird, compiling. 
+[2016.06.16-23.44.42:770][  0]LogStaticMesh: Building static mesh SM_Bird...
+[2016.06.16-23.44.42:773][  0]LogStaticMesh: Built static mesh [2.834728ms] /Game/Effects/Meshes/SM_Bird.SM_Bird
+[2016.06.16-23.44.42:776][  0]LogTexture:Display: Building textures: ThumbnailTexture (DXT1)
+[2016.06.16-23.44.42:798][  0]LogTexture:Display: Building textures: ThumbnailTexture (DXT1)
+[2016.06.16-23.44.42:891][  0]LogTexture:Display: Building textures: T_FlipbookBird_01_Lit_D (AutoDXT)
+[2016.06.16-23.44.46:092][  0]LogMaterial: Missing cached shader map for material M_BirdsDistant, compiling. 
+[2016.06.16-23.44.46:106][  0]LogTexture:Display: Building textures: ThumbnailTexture (DXT1)
+[2016.06.16-23.44.46:128][  0]LogTexture:Display: Building textures: ThumbnailTexture (DXT1)
+[2016.06.16-23.44.46:148][  0]LogAudioDerivedData:Display: Building compressed audio format OGG wave Landscape_Birds...
+[2016.06.16-23.44.46:582][  0]LogAudioDerivedData:Display: Building compressed audio format OGG wave Landscape_WindAnimals01...
+[2016.06.16-23.44.47:227][  0]LogStaticMesh: Building static mesh SM_Bomb...
+[2016.06.16-23.44.47:236][  0]LogStaticMesh: Built static mesh [8.373405ms] /Game/Items/Meshes/SM_Bomb.SM_Bomb
+[2016.06.16-23.44.47:357][  0]LogAudioDerivedData:Display: Building compressed audio format OGG wave Footstep01...
+[2016.06.16-23.44.47:366][  0]LogAudioDerivedData:Display: Building compressed audio format OGG wave Footstep02...
+[2016.06.16-23.44.47:374][  0]LogAudioDerivedData:Display: Building compressed audio format OGG wave Footstep03...
+[2016.06.16-23.44.47:382][  0]LogAudioDerivedData:Display: Building compressed audio format OGG wave Footstep04...
+[2016.06.16-23.44.47:391][  0]LogAudioDerivedData:Display: Building compressed audio format OGG wave Footstep05...
+[2016.06.16-23.44.47:399][  0]LogAudioDerivedData:Display: Building compressed audio format OGG wave Footstep06...
+[2016.06.16-23.44.47:409][  0]LogAudioDerivedData:Display: Building compressed audio format OGG wave Footstep07...
+[2016.06.16-23.44.47:421][  0]LogAudioDerivedData:Display: Building compressed audio format OGG wave Footstep08...
+[2016.06.16-23.44.47:435][  0]LogAudioDerivedData:Display: Building compressed audio format OGG wave Footstep09...
+[2016.06.16-23.44.47:476][  0]LogTexture:Display: Building textures: T_Lensflare_01 (AutoDXT)
+[2016.06.16-23.44.47:515][  0]LogMaterial: Missing cached shader map for material M_Lensflare_01, compiling. 
+[2016.06.16-23.44.47:612][  0]LogTexture:Display: Building textures: T_TileNoise (AutoDXT)
+[2016.06.16-23.44.48:524][  0]LogTexture:Display: Building textures: T_SquareMaskTightEdge (AutoDXT)
+[2016.06.16-23.44.48:568][  0]LogMaterial: Missing cached shader map for material M_MuzzleGlow, compiling. 
+[2016.06.16-23.44.48:575][  0]LogTexture:Display: Building textures: T_muzzle_flashes (AutoDXT)
+[2016.06.16-23.44.48:600][  0]LogMaterial: Missing cached shader map for material M_muzzle_flash_subUV, compiling. 
+[2016.06.16-23.44.48:628][  0]LogTexture:Display: Building textures: T_SmokeBall_01_8_8 (AutoDXT)
+[2016.06.16-23.44.49:230][  0]LogMaterial: Missing cached shader map for material M_SmokeBall, compiling. 
+[2016.06.16-23.44.49:261][  0]LogTexture:Display: Building textures: T_Clouds_01 (AutoDXT)
+[2016.06.16-23.44.49:468][  0]LogMaterial: Missing cached shader map for material M_ImpactSmoke, compiling. 
+[2016.06.16-23.44.49:489][  0]LogMaterial: Missing cached shader map for material M_SoftGradient_Muzzle, compiling. 
+[2016.06.16-23.44.49:499][  0]LogTexture:Display: Building textures: T_Crosshair_Horizontal_M (AutoDXT)
+[2016.06.16-23.44.49:529][  0]LogTexture:Display: Building textures: T_Crosshair_Scanline_M (AutoDXT)
+[2016.06.16-23.44.49:549][  0]LogMaterial: Missing cached shader map for material M_Crosshairs_MultiHolo_Scanline, compiling. 
+[2016.06.16-23.44.49:627][  0]LogTexture:Display: Building textures: T_ExampleLayers_Metal02_N (BC5)
+[2016.06.16-23.44.50:166][  0]LogTexture:Display: Building textures: Chr_FPS_Metal_02 (AutoDXT)
+[2016.06.16-23.44.53:686][  0]LogTexture:Display: Building textures: T_Metal_Metal02_D (AutoDXT)
+[2016.06.16-23.44.57:062][  0]LogTexture:Display: Building textures: T_PaintedMetal01_N (BC5)
+[2016.06.16-23.44.57:515][  0]LogTexture:Display: Building textures: T_PaintedMetal02 (AutoDXT)
+[2016.06.16-23.44.58:547][  0]LogTexture:Display: Building textures: MagGun_01_N (BC5)
+[2016.06.16-23.45.00:042][  0]LogTexture:Display: Building textures: MagGun_Decals (AutoDXT)
+[2016.06.16-23.45.00:487][  0]LogTexture:Display: Building textures: MagGunT1_section (AutoDXT)
+[2016.06.16-23.45.05:270][  0]LogTexture:Display: Building textures: T_Rubber (AutoDXT)
+[2016.06.16-23.45.09:140][  0]LogTexture:Display: Building textures: MagGunT1_shade (AutoDXT)
+[2016.06.16-23.45.15:982][  0]LogMaterial: Missing cached shader map for material MagGun_MatA, compiling. 
+[2016.06.16-23.45.16:404][  0]LogTexture:Display: Building textures: MagGun_02_N (BC5)
+[2016.06.16-23.45.18:342][  0]LogTexture:Display: Building textures: MagGunT2_section (AutoDXT)
+[2016.06.16-23.45.21:527][  0]LogTexture:Display: Building textures: MagGunT2_shade (AutoDXT)
+[2016.06.16-23.45.34:149][  0]LogTexture:Display: Building textures: MagGun_Display_EM (AutoDXT)
+[2016.06.16-23.45.35:657][  0]LogMaterial: Missing cached shader map for material MagGun_MatB, compiling. 
+[2016.06.16-23.45.35:689][  0]LogStaticMesh: Building static mesh SM_Rifle...
+[2016.06.16-23.45.36:087][  0]LogStaticMesh: Built static mesh [398.376343ms] /Game/Items/Meshes/SM_Rifle.SM_Rifle
+[2016.06.16-23.45.36:217][  0]LogTexture:Display: Building textures: T_blood_various (G8)
+[2016.06.16-23.45.36:582][  0]LogTexture:Display: Building textures: T_blood_various_N (BC5)
+[2016.06.16-23.45.37:018][  0]LogMaterial: Missing cached shader map for material M_impact_splash_subUV, compiling. 
+[2016.06.16-23.45.37:046][  0]LogTexture:Display: Building textures: ThumbnailTexture (DXT1)
+[2016.06.16-23.45.37:090][  0]LogTexture:Display: Building textures: Flare_02 (BGRA8)
+[2016.06.16-23.45.37:248][  0]LogMaterial: Missing cached shader map for material M_LensFlare_02, compiling. 
+[2016.06.16-23.45.37:257][  0]LogMaterial: Missing cached shader map for material M_radial_ramp_soft, compiling. 
+[2016.06.16-23.45.37:397][  0]LogTexture:Display: Building textures: T_Steam_02_Packed (AutoDXT)
+[2016.06.16-23.45.39:439][  0]LogMaterial: Missing cached shader map for material M_MuzzleSmokeDetail_GPU, compiling. 
+[2016.06.16-23.45.39:511][  0]LogTexture:Display: Building textures: T_SparkCore_2X2 (BGRA8)
+[2016.06.16-23.45.39:915][  0]LogMaterial: Missing cached shader map for material M_spark_subUV, compiling. 
+[2016.06.16-23.45.39:928][  0]LogTexture:Display: Building textures: ThumbnailTexture (DXT1)
+[2016.06.16-23.45.39:956][  0]LogStaticMesh: Building static mesh SM_MuzzleCone...
+[2016.06.16-23.45.39:959][  0]LogStaticMesh: Built static mesh [3.916074ms] /Game/Effects/Meshes/Weapon/SM_MuzzleCone.SM_MuzzleCone
+[2016.06.16-23.45.39:964][  0]LogTexture:Display: Building textures: T_FX_ColorDistort (AutoDXT)
+[2016.06.16-23.45.39:972][  0]LogTexture:Display: Building textures: ThumbnailTexture (DXT1)
+[2016.06.16-23.45.40:017][  0]LogTexture:Display: Building textures: T_FX_CameraDistort (AutoDXT)
+[2016.06.16-23.45.40:028][  0]LogTexture:Display: Building textures: T_Caustics_2 (DXT1)
+[2016.06.16-23.45.40:131][  0]LogMaterial: Missing cached shader map for material M_WP_Linkgun_Connection, compiling. 
+[2016.06.16-23.45.40:136][  0]LogTexture:Display: Building textures: T_EFX_Beam_Electricity_02 (DXT1)
+[2016.06.16-23.45.40:141][  0]LogMaterial: Missing cached shader map for material M_WP_ShockRifle_Panning_Beam, compiling. 
+[2016.06.16-23.45.40:148][  0]LogTexture:Display: Building textures: ThumbnailTexture (DXT1)
+[2016.06.16-23.45.40:190][  0]LogAudioDerivedData:Display: Building compressed audio format OGG wave Weapon_AssaultRifle_Swap01...
+[2016.06.16-23.45.40:205][  0]LogAudioDerivedData:Display: Building compressed audio format OGG wave Weapon_AssaultRifle_Swap02...
+[2016.06.16-23.45.40:217][  0]LogAudioDerivedData:Display: Building compressed audio format OGG wave Weapon_AssaultRifle_Swap03...
+[2016.06.16-23.45.40:228][  0]LogAudioDerivedData:Display: Building compressed audio format OGG wave AssaultRifle_Shot02...
+[2016.06.16-23.45.40:247][  0]LogAudioDerivedData:Display: Building compressed audio format OGG wave AssaultRifle_Shot03...
+[2016.06.16-23.45.40:264][  0]LogAudioDerivedData:Display: Building compressed audio format OGG wave AssaultRifle_Shot04...
+[2016.06.16-23.45.40:281][  0]LogAudioDerivedData:Display: Building compressed audio format OGG wave AssaultRifle_Shot05...
+[2016.06.16-23.45.40:313][  0]LogAudioDerivedData:Display: Building compressed audio format OGG wave AssaultRifle_Shot06...
+[2016.06.16-23.45.40:354][  0]LogAudioDerivedData:Display: Building compressed audio format OGG wave AssaultRifle_Shot01_Stereo...
+[2016.06.16-23.45.40:391][  0]LogAudioDerivedData:Display: Building compressed audio format OGG wave AssaultRifle_Shot02_Stereo...
+[2016.06.16-23.45.40:438][  0]LogAudioDerivedData:Display: Building compressed audio format OGG wave AssaultRifle_Shot03_Stereo...
+[2016.06.16-23.45.40:483][  0]LogAudioDerivedData:Display: Building compressed audio format OGG wave AssaultRifle_Shot04_Stereo...
+[2016.06.16-23.45.40:541][  0]LogAudioDerivedData:Display: Building compressed audio format OGG wave AssaultRifle_Shot01...
+[2016.06.16-23.45.40:566][  0]LogAudioDerivedData:Display: Building compressed audio format OGG wave AssaultRifle_Shot06_Stereo...
+[2016.06.16-23.45.40:600][  0]LogAudioDerivedData:Display: Building compressed audio format OGG wave AssaultRifle_Shot05_Stereo...
+[2016.06.16-23.45.40:641][  0]LogMaterial: Missing cached shader map for material M_RifleTracer_01, compiling. 
+[2016.06.16-23.45.40:684][  0]LogTexture:Display: Building textures: T_FlashLight_AO (DXT1)
+[2016.06.16-23.45.40:911][  0]LogTexture:Display: Building textures: T_FlashLight_M (DXT1)
+[2016.06.16-23.45.41:153][  0]LogTexture:Display: Building textures: T_FlashLight_N (BC5)
+[2016.06.16-23.45.41:251][  0]LogMaterial: Missing cached shader map for material M_Flashlight_01, compiling. 
+[2016.06.16-23.45.41:266][  0]LogStaticMesh: Building static mesh SM_FlashLight_LightCone...
+[2016.06.16-23.45.41:267][  0]LogStaticMesh: Built static mesh [2.292593ms] /Game/Weapons/SM_FlashLight_LightCone.SM_FlashLight_LightCone
+[2016.06.16-23.45.41:272][  0]LogTexture:Display: Building textures: T_DustParticles_M (DXT1)
+[2016.06.16-23.45.41:297][  0]LogMaterial: Missing cached shader map for material M_LightCone, compiling. 
+[2016.06.16-23.45.41:301][  0]LogStaticMesh: Building static mesh SM_FlashLight...
+[2016.06.16-23.45.41:305][  0]LogStaticMesh: Built static mesh [4.355810ms] /Game/Items/Meshes/SM_FlashLight.SM_FlashLight
+[2016.06.16-23.45.41:347][  0]LogTexture:Display: Building textures: HQ_Lightmap0_1 (AutoDXT)
+[2016.06.16-23.45.41:352][  0]LogTexture:Display: Building textures: HQ_Lightmap0_2 (AutoDXT)
+[2016.06.16-23.45.41:369][  0]LogTexture:Display: Building textures: LQ_Lightmap_0_1 (DXT1)
+[2016.06.16-23.45.41:376][  0]LogTexture:Display: Building textures: LQ_Lightmap_0_2 (DXT1)
+[2016.06.16-23.45.41:384][  0]LogTexture:Display: Building textures: SkyOcclusion0_1 (AutoDXT)
+[2016.06.16-23.45.41:392][  0]LogTexture:Display: Building textures: SkyOcclusion0_2 (AutoDXT)
+[2016.06.16-23.45.41:405][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_0 (BGRA8)
+[2016.06.16-23.45.41:407][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_1 (BGRA8)
+[2016.06.16-23.45.41:643][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2016.06.16-23.45.41:645][  0]LogAIModule: Creating AISystem for world DefaultMap
+[2016.06.16-23.45.41:646][  0]Cmd: MAP CHECKDEP
+[2016.06.16-23.45.41:646][  0]MapCheck: New page: DefaultMap - 17 Jun 2016 01:45:41
+[2016.06.16-23.45.41:769][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 122.909ms to complete.
+[2016.06.16-23.45.41:769][  0]LogFileHelpers: Loading map 'DefaultMap' took 61.169
+[2016.06.16-23.45.41:882][  0]LogCollectionManager: Loaded 0 collections in 0.000957 seconds
+[2016.06.16-23.45.41:893][  0]LogContentBrowser: Native class hierarchy populated in 0.0104 seconds. Added 1712 classes and 265 folders.
+[2016.06.16-23.45.41:918][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0046 seconds. Added 1 classes and 2 folders.
+[2016.06.16-23.45.41:952][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2016.06.16-23.45.41:953][  0]LogSlate:Warning: Failed to load font data from 'Veranda'
+[2016.06.16-23.45.41:957][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2016.06.16-23.45.41:981][  0]LogLoad: Full Startup: 90.70 seconds (BP compile: 0.73 seconds)
+[2016.06.16-23.45.42:165][  0]LogRenderer:Warning: Reallocating scene render targets to support 1208x576 (Frame:3).
+[2016.06.16-23.45.42:359][  3]LogAssetRegistry: Asset discovery search completed in 81.8004 seconds
+[2016.06.16-23.45.48:073][551]LogPlayLevel: PIE:  No blueprints needed recompiling
+[2016.06.16-23.45.48:073][551]PIE: New page: PIE session: DefaultMap (17 Jun 2016 01:45:48)
+[2016.06.16-23.45.48:076][551]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003175s)
+[2016.06.16-23.45.48:077][551]LogPlayLevel: PIE: World Init took: (0.000528s)
+[2016.06.16-23.45.48:077][551]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/DefaultMap.DefaultMap to /Game/Maps/UEDPIE_0_DefaultMap.DefaultMap (0.003876s)
+[2016.06.16-23.45.48:159][551]LogWorld: Game class is 'DefaultGameModeSetup_C'
+[2016.06.16-23.45.48:309][551]LogAIModule: Creating AISystem for world DefaultMap
+[2016.06.16-23.45.48:316][551]LogWorld: Bringing World /Game/Maps/UEDPIE_0_DefaultMap.DefaultMap up for play (max tick rate 0) at 2016.06.17-00.45.48
+[2016.06.16-23.45.48:348][551]LogWorld: Bringing up level for play took: 0.038338
+[2016.06.16-23.45.48:508][551]LogSkinnedMeshComp:Warning: GetSocketByName(): No SkeletalMesh for WeaponMesh3P
+[2016.06.16-23.45.48:508][551]LogSkinnedMeshComp:Warning: GetSocketByName(): No SkeletalMesh for WeaponMesh3P
+[2016.06.16-23.45.48:508][551]LogSkinnedMeshComp:Warning: GetSocketByName(): No SkeletalMesh for WeaponMesh3P
+[2016.06.16-23.45.48:508][551]LogSkinnedMeshComp:Warning: GetSocketByName(): No SkeletalMesh for WeaponMesh3P
+[2016.06.16-23.45.48:508][551]LogSkinnedMeshComp:Warning: GetSocketByName(): No SkeletalMesh for WeaponMesh3P
+[2016.06.16-23.45.48:508][551]LogSkinnedMeshComp:Warning: GetSocketByName(): No SkeletalMesh for WeaponMesh3P
+[2016.06.16-23.45.48:508][551]LogSkinnedMeshComp:Warning: GetSocketByName(): No SkeletalMesh for WeaponMesh3P
+[2016.06.16-23.45.48:583][551]PIE: Info Play in editor start time for /Game/Maps/UEDPIE_0_DefaultMap 1.425
+[2016.06.16-23.47.07:966][948]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000276E4FAD440
+[2016.06.16-23.47.15:005][761]LogContentBrowser:Verbose: The content browser source was changed by the sources view to '/Classes_Game/SurvivalGame/Public/Editor'
+[2016.06.16-23.47.15:624][834]LogContentBrowser:Verbose: The content browser source was changed by the sources view to '/Classes_Game/SurvivalGame/Public'
+[2016.06.16-23.47.22:395][573]LogPackageName:Error: DoesPackageExist: DoesPackageExist FAILED: 'Engine/Tutorial/Installation/InstallingVisualStudioTutorial' is not a standard unreal filename or a long path name. Reason: Path should start with a '/'
+[2016.06.16-23.47.22:395][573]LogLinker:Warning: Can't find file 'Engine/Tutorial/Installation/InstallingVisualStudioTutorial'
+[2016.06.16-23.47.22:396][573]LogPackageName:Error: DoesPackageExist: DoesPackageExist FAILED: 'Engine/Tutorial/Installation/InstallingVisualStudioTutorial' is not a standard unreal filename or a long path name. Reason: Path should start with a '/'
+[2016.06.16-23.47.22:396][573]LogLinker:Warning: Can't find file 'Engine/Tutorial/Installation/InstallingVisualStudioTutorial'
+[2016.06.16-23.47.22:399][573]LogUObjectGlobals:Warning: Failed to find object 'Blueprint Engine/Tutorial/Installation/InstallingVisualStudioTutorial.InstallingVisualStudioTutorial'
+[2016.06.16-23.47.46:210][269]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2016.06.16-23.47.49:652][487]Cmd: QUIT_EDITOR
+[2016.06.16-23.47.49:851][487]LogExit: Preparing to exit.
+[2016.06.16-23.47.50:839][487]LogExit: Editor shut down
+[2016.06.16-23.47.50:840][487]LogExit: Transaction tracking system shut down
+[2016.06.16-23.47.50:840][487]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000276B8F3A7A0
+[2016.06.16-23.47.50:842][487]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000276E5612CA0
+[2016.06.16-23.47.50:842][487]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000276E67FACA0
+[2016.06.16-23.47.50:918][487]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000276FB24CB80
+[2016.06.16-23.47.50:918][487]LogExit: Object subsystem successfully closed.
+[2016.06.16-23.47.50:956][487]LogModuleManager: Shutting down and abandoning module CrashTracker (178)
+[2016.06.16-23.47.50:956][487]LogModuleManager: Shutting down and abandoning module SuperSearch (177)
+[2016.06.16-23.47.50:956][487]LogModuleManager: Shutting down and abandoning module SceneOutliner (176)
+[2016.06.16-23.47.50:956][487]LogModuleManager: Shutting down and abandoning module EditorWidgets (175)
+[2016.06.16-23.47.50:956][487]LogModuleManager: Shutting down and abandoning module CollectionManager (174)
+[2016.06.16-23.47.50:956][487]LogModuleManager: Shutting down and abandoning module StatsViewer (173)
+[2016.06.16-23.47.50:956][487]LogModuleManager: Shutting down and abandoning module FoliageEdit (172)
+[2016.06.16-23.47.50:956][487]LogModuleManager: Shutting down and abandoning module LandscapeEditor (171)
+[2016.06.16-23.47.50:957][487]LogModuleManager: Shutting down and abandoning module MeshPaint (170)
+[2016.06.16-23.47.50:957][487]LogModuleManager: Shutting down and abandoning module ActorPickerMode (169)
+[2016.06.16-23.47.50:957][487]LogModuleManager: Shutting down and abandoning module GeometryMode (168)
+[2016.06.16-23.47.50:957][487]LogModuleManager: Shutting down and abandoning module TextureAlignMode (167)
+[2016.06.16-23.47.50:957][487]LogModuleManager: Shutting down and abandoning module BspMode (166)
+[2016.06.16-23.47.50:957][487]LogModuleManager: Shutting down and abandoning module PlacementMode (165)
+[2016.06.16-23.47.50:957][487]LogModuleManager: Shutting down and abandoning module AutomationWorker (164)
+[2016.06.16-23.47.50:957][487]LogModuleManager: Shutting down and abandoning module CharacterAI (163)
+[2016.06.16-23.47.50:957][487]LogModuleManager: Shutting down and abandoning module SmartSnapping (162)
+[2016.06.16-23.47.50:957][487]LogModuleManager: Shutting down and abandoning module ViewportSnapping (161)
+[2016.06.16-23.47.50:957][487]LogModuleManager: Shutting down and abandoning module LogVisualizer (160)
+[2016.06.16-23.47.50:957][487]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (159)
+[2016.06.16-23.47.50:957][487]LogModuleManager: Shutting down and abandoning module IntroTutorials (158)
+[2016.06.16-23.47.50:957][487]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (157)
+[2016.06.16-23.47.50:957][487]LogModuleManager: Shutting down and abandoning module HardwareTargeting (156)
+[2016.06.16-23.47.50:957][487]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (155)
+[2016.06.16-23.47.50:957][487]LogModuleManager: Shutting down and abandoning module UndoHistory (154)
+[2016.06.16-23.47.50:957][487]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (153)
+[2016.06.16-23.47.50:957][487]LogModuleManager: Shutting down and abandoning module UserFeedback (152)
+[2016.06.16-23.47.50:957][487]LogModuleManager: Shutting down and abandoning module XmlParser (151)
+[2016.06.16-23.47.50:957][487]LogModuleManager: Shutting down and abandoning module Blutility (150)
+[2016.06.16-23.47.50:957][487]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (149)
+[2016.06.16-23.47.50:957][487]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (148)
+[2016.06.16-23.47.50:957][487]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (147)
+[2016.06.16-23.47.51:429][487]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (146)
+[2016.06.16-23.47.51:429][487]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (145)
+[2016.06.16-23.47.51:429][487]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (144)
+[2016.06.16-23.47.51:429][487]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (143)
+[2016.06.16-23.47.51:429][487]LogModuleManager: Shutting down and abandoning module InputBindingEditor (142)
+[2016.06.16-23.47.51:430][487]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (141)
+[2016.06.16-23.47.51:430][487]LogModuleManager: Shutting down and abandoning module SettingsEditor (140)
+[2016.06.16-23.47.51:430][487]LogModuleManager: Shutting down and abandoning module ProjectLauncher (139)
+[2016.06.16-23.47.51:430][487]LogModuleManager: Shutting down and abandoning module SessionFrontend (138)
+[2016.06.16-23.47.51:430][487]LogModuleManager: Shutting down and abandoning module ProfilerClient (137)
+[2016.06.16-23.47.51:430][487]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (136)
+[2016.06.16-23.47.51:430][487]LogModuleManager: Shutting down and abandoning module DeviceManager (135)
+[2016.06.16-23.47.51:430][487]LogModuleManager: Shutting down and abandoning module AutomationController (134)
+[2016.06.16-23.47.51:430][487]LogModuleManager: Shutting down and abandoning module AutomationWindow (133)
+[2016.06.16-23.47.51:430][487]LogModuleManager: Shutting down and abandoning module Layers (132)
+[2016.06.16-23.47.51:430][487]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (131)
+[2016.06.16-23.47.51:430][487]LogModuleManager: Shutting down and abandoning module DetailCustomizations (130)
+[2016.06.16-23.47.51:430][487]LogModuleManager: Shutting down and abandoning module PackagesDialog (129)
+[2016.06.16-23.47.51:430][487]LogModuleManager: Shutting down and abandoning module AssetRegistry (128)
+[2016.06.16-23.47.51:521][487]LogModuleManager: Shutting down and abandoning module Persona (127)
+[2016.06.16-23.47.51:521][487]LogModuleManager: Shutting down and abandoning module SlateReflector (126)
+[2016.06.16-23.47.51:521][487]LogModuleManager: Shutting down and abandoning module LevelEditor (125)
+[2016.06.16-23.47.51:522][487]LogModuleManager: Shutting down and abandoning module Kismet (124)
+[2016.06.16-23.47.51:522][487]LogModuleManager: Shutting down and abandoning module GraphEditor (123)
+[2016.06.16-23.47.51:522][487]LogModuleManager: Shutting down and abandoning module ClassViewer (122)
+[2016.06.16-23.47.51:522][487]LogModuleManager: Shutting down and abandoning module Toolbox (121)
+[2016.06.16-23.47.51:522][487]LogModuleManager: Shutting down and abandoning module ModuleUI (120)
+[2016.06.16-23.47.51:522][487]LogModuleManager: Shutting down and abandoning module MovieSceneTools (119)
+[2016.06.16-23.47.51:522][487]LogModuleManager: Shutting down and abandoning module OutputLog (118)
+[2016.06.16-23.47.51:522][487]LogModuleManager: Shutting down and abandoning module GammaUI (117)
+[2016.06.16-23.47.51:522][487]LogModuleManager: Shutting down and abandoning module Documentation (116)
+[2016.06.16-23.47.51:522][487]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (115)
+[2016.06.16-23.47.51:522][487]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (114)
+[2016.06.16-23.47.51:522][487]LogModuleManager: Shutting down and abandoning module HTTP (113)
+[2016.06.16-23.47.51:522][487]LogModuleManager: Shutting down and abandoning module AnalyticsET (112)
+[2016.06.16-23.47.51:522][487]LogModuleManager: Shutting down and abandoning module Analytics (111)
+[2016.06.16-23.47.51:522][487]LogModuleManager: Shutting down and abandoning module AITestSuite (110)
+[2016.06.16-23.47.51:522][487]LogModuleManager: Shutting down and abandoning module GameplayDebugger (109)
+[2016.06.16-23.47.51:523][487]LogModuleManager: Shutting down and abandoning module AIModule (108)
+[2016.06.16-23.47.51:523][487]LogModuleManager: Shutting down and abandoning module ProfilerService (107)
+[2016.06.16-23.47.51:769][487]LogModuleManager: Shutting down and abandoning module TaskGraph (106)
+[2016.06.16-23.47.51:769][487]LogModuleManager: Shutting down and abandoning module SlateRemote (105)
+[2016.06.16-23.47.51:769][487]LogModuleManager: Shutting down and abandoning module ScriptEditorPlugin (104)
+[2016.06.16-23.47.51:769][487]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (103)
+[2016.06.16-23.47.51:769][487]LogModuleManager: Shutting down and abandoning module CableComponent (102)
+[2016.06.16-23.47.51:769][487]LogModuleManager: Shutting down and abandoning module MessagingDebugger (101)
+[2016.06.16-23.47.51:770][487]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (100)
+[2016.06.16-23.47.51:770][487]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (99)
+[2016.06.16-23.47.51:770][487]LogModuleManager: Shutting down and abandoning module PluginsEditor (98)
+[2016.06.16-23.47.51:770][487]LogModuleManager: Shutting down and abandoning module MainFrame (97)
+[2016.06.16-23.47.51:770][487]LogModuleManager: Shutting down and abandoning module EpicSurvey (96)
+[2016.06.16-23.47.51:770][487]LogModuleManager: Shutting down and abandoning module DesktopPlatform (95)
+[2016.06.16-23.47.51:770][487]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (94)
+[2016.06.16-23.47.51:770][487]LogModuleManager: Shutting down and abandoning module HotReload (93)
+[2016.06.16-23.47.51:771][487]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (92)
+[2016.06.16-23.47.51:771][487]LogModuleManager: Shutting down and abandoning module UObjectPlugin (91)
+[2016.06.16-23.47.51:771][487]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (90)
+[2016.06.16-23.47.51:771][487]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (89)
+[2016.06.16-23.47.51:771][487]LogModuleManager: Shutting down and abandoning module SourceControl (88)
+[2016.06.16-23.47.51:771][487]LogModuleManager: Shutting down and abandoning module GitSourceControl (87)
+[2016.06.16-23.47.51:771][487]LogModuleManager: Shutting down and abandoning module BlankPlugin (86)
+[2016.06.16-23.47.51:771][487]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (85)
+[2016.06.16-23.47.51:771][487]LogModuleManager: Shutting down and abandoning module PaperJsonImporter (84)
+[2016.06.16-23.47.51:771][487]LogModuleManager: Shutting down and abandoning module ContentBrowser (83)
+[2016.06.16-23.47.51:772][487]LogModuleManager: Shutting down and abandoning module Paper2DEditor (82)
+[2016.06.16-23.47.51:772][487]LogModuleManager: Shutting down and abandoning module SurvivalGame (81)
+[2016.06.16-23.47.51:772][487]LogModuleManager: Shutting down and abandoning module ScriptPlugin (80)
+[2016.06.16-23.47.51:772][487]LogModuleManager: Shutting down and abandoning module UdpMessaging (79)
+[2016.06.16-23.47.51:873][487]LogModuleManager: Shutting down and abandoning module Paper2D (78)
+[2016.06.16-23.47.51:873][487]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (77)
+[2016.06.16-23.47.51:878][487]LogModuleManager: Shutting down and abandoning module Media (76)
+[2016.06.16-23.47.51:878][487]LogModuleManager: Shutting down and abandoning module WmfMedia (75)
+[2016.06.16-23.47.51:878][487]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (74)
+[2016.06.16-23.47.51:878][487]LogModuleManager: Shutting down and abandoning module PropertyEditor (73)
+[2016.06.16-23.47.51:878][487]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (72)
+[2016.06.16-23.47.51:878][487]LogModuleManager: Shutting down and abandoning module FunctionalTesting (71)
+[2016.06.16-23.47.51:878][487]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (70)
+[2016.06.16-23.47.51:878][487]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (69)
+[2016.06.16-23.47.51:878][487]LogModuleManager: Shutting down and abandoning module MessageLog (68)
+[2016.06.16-23.47.51:878][487]LogModuleManager: Shutting down and abandoning module Sequencer (67)
+[2016.06.16-23.47.51:878][487]LogModuleManager: Shutting down and abandoning module AssetTools (66)
+[2016.06.16-23.47.51:878][487]LogModuleManager: Shutting down and abandoning module UMGEditor (65)
+[2016.06.16-23.47.51:878][487]LogModuleManager: Shutting down and abandoning module UMG (64)
+[2016.06.16-23.47.51:878][487]LogModuleManager: Shutting down and abandoning module Slate (63)
+[2016.06.16-23.47.51:878][487]LogModuleManager: Shutting down and abandoning module EditorStyle (62)
+[2016.06.16-23.47.51:884][487]LogModuleManager: Shutting down and abandoning module SessionServices (61)
+[2016.06.16-23.47.51:884][487]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (60)
+[2016.06.16-23.47.51:884][487]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (59)
+[2016.06.16-23.47.51:884][487]LogModuleManager: Shutting down and abandoning module XAudio2 (58)
+[2016.06.16-23.47.51:884][487]LogModuleManager: Shutting down and abandoning module Networking (56)
+[2016.06.16-23.47.51:884][487]LogModuleManager: Shutting down and abandoning module Core (55)
+[2016.06.16-23.47.51:884][487]LogModuleManager: Shutting down and abandoning module KismetCompiler (54)
+[2016.06.16-23.47.51:884][487]LogModuleManager: Shutting down and abandoning module PhysXFormats (53)
+[2016.06.16-23.47.51:884][487]LogModuleManager: Shutting down and abandoning module MeshUtilities (52)
+[2016.06.16-23.47.51:884][487]LogModuleManager: Shutting down and abandoning module DerivedDataCache (51)
+[2016.06.16-23.47.51:913][487]LogDerivedDataCache: Shutdown
+[2016.06.16-23.47.51:913][487]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (50)
+[2016.06.16-23.47.51:913][487]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (49)
+[2016.06.16-23.47.51:913][487]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (48)
+[2016.06.16-23.47.51:913][487]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (47)
+[2016.06.16-23.47.51:913][487]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (46)
+[2016.06.16-23.47.51:913][487]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (45)
+[2016.06.16-23.47.51:913][487]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (44)
+[2016.06.16-23.47.51:913][487]LogModuleManager: Shutting down and abandoning module ImageWrapper (43)
+[2016.06.16-23.47.51:913][487]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (42)
+[2016.06.16-23.47.51:914][487]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (41)
+[2016.06.16-23.47.51:914][487]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (40)
+[2016.06.16-23.47.51:914][487]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (39)
+[2016.06.16-23.47.51:914][487]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (38)
+[2016.06.16-23.47.51:914][487]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (37)
+[2016.06.16-23.47.51:914][487]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (36)
+[2016.06.16-23.47.51:914][487]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (35)
+[2016.06.16-23.47.51:914][487]LogModuleManager: Shutting down and abandoning module Messaging (34)
+[2016.06.16-23.47.51:914][487]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (33)
+[2016.06.16-23.47.51:914][487]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (32)
+[2016.06.16-23.47.51:914][487]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (31)
+[2016.06.16-23.47.51:914][487]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (30)
+[2016.06.16-23.47.51:914][487]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (29)
+[2016.06.16-23.47.51:914][487]LogModuleManager: Shutting down and abandoning module Android_ES31TargetPlatform (28)
+[2016.06.16-23.47.51:914][487]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (27)
+[2016.06.16-23.47.51:914][487]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (26)
+[2016.06.16-23.47.51:914][487]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (25)
+[2016.06.16-23.47.51:914][487]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (24)
+[2016.06.16-23.47.51:914][487]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (23)
+[2016.06.16-23.47.51:914][487]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (22)
+[2016.06.16-23.47.51:914][487]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (21)
+[2016.06.16-23.47.51:914][487]LogModuleManager: Shutting down and abandoning module TargetPlatform (20)
+[2016.06.16-23.47.51:914][487]LogModuleManager: Shutting down and abandoning module InputCore (19)
+[2016.06.16-23.47.51:914][487]LogModuleManager: Shutting down and abandoning module Settings (18)
+[2016.06.16-23.47.51:914][487]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (16)
+[2016.06.16-23.47.51:914][487]LogModuleManager: Shutting down and abandoning module OculusRift (15)
+[2016.06.16-23.47.51:914][487]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (14)
+[2016.06.16-23.47.51:914][487]LogModuleManager: Shutting down and abandoning module TextureCompressor (13)
+[2016.06.16-23.47.51:914][487]LogModuleManager: Shutting down and abandoning module ShaderCore (12)
+[2016.06.16-23.47.51:914][487]LogModuleManager: Shutting down and abandoning module Landscape (11)
+[2016.06.16-23.47.51:914][487]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (10)
+[2016.06.16-23.47.51:915][487]LogModuleManager: Shutting down and abandoning module OpenGLDrv (9)
+[2016.06.16-23.47.51:915][487]LogModuleManager: Shutting down and abandoning module D3D11RHI (8)
+[2016.06.16-23.47.51:915][487]LogModuleManager: Shutting down and abandoning module Renderer (7)
+[2016.06.16-23.47.51:915][487]LogModuleManager: Shutting down and abandoning module Engine (6)
+[2016.06.16-23.47.51:915][487]LogModuleManager: Shutting down and abandoning module CoreUObject (5)
+[2016.06.16-23.47.51:915][487]LogModuleManager: Shutting down and abandoning module NetworkFile (4)
+[2016.06.16-23.47.51:915][487]LogModuleManager: Shutting down and abandoning module StreamingFile (3)
+[2016.06.16-23.47.51:915][487]LogModuleManager: Shutting down and abandoning module SandboxFile (2)
+[2016.06.16-23.47.51:915][487]LogModuleManager: Shutting down and abandoning module PakFile (1)
+[2016.06.16-23.47.51:917][487]LogExit: Exiting.
+[2016.06.16-23.47.51:986][487]Log file closed, 06/17/16 00:47:51
